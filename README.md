@@ -19,3 +19,4 @@ Indentation done in :
 - template/mail/*
 - template/module/*
 - template/payment/*
+- template/product/*
