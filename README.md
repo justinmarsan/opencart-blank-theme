@@ -14,3 +14,4 @@ Indentation done in :
 - template/account/*
 - template/affiliate/*
 - template/checkout/*
+- template/error/*
