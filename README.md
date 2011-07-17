@@ -20,3 +20,4 @@ Indentation done in :
 - template/module/*
 - template/payment/*
 - template/product/*
+- template/total/*
