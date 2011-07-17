@@ -16,3 +16,4 @@ Indentation done in :
 - template/checkout/*
 - template/error/*
 - template/information/*
+- template/mail/*
