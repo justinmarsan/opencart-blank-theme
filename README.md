@@ -15,3 +15,4 @@ Indentation done in :
 - template/affiliate/*
 - template/checkout/*
 - template/error/*
+- template/information/*
