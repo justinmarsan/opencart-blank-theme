@@ -9,4 +9,5 @@ This blank theme is created to make theming for opencart easier for frontend dev
 What is done ?
 --------------
 
-Nothing, that's why it's pointless to download it for now.
+Indentation done in :
+- template/common/*
