@@ -13,3 +13,4 @@ Indentation done in :
 - template/common/*
 - template/account/*
 - template/affiliate/*
+- template/checkout/*
