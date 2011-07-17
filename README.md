@@ -12,3 +12,4 @@ What is done ?
 Indentation done in :
 - template/common/*
 - template/account/*
+- template/affiliate/*
