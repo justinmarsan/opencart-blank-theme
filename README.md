@@ -17,3 +17,4 @@ Indentation done in :
 - template/error/*
 - template/information/*
 - template/mail/*
+- template/module/*
