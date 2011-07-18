@@ -34,12 +34,16 @@
       		<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="login">
         		<section class="content">
           			<p><?php echo $text_i_am_returning_customer; ?></p>
-          			<b><?php echo $entry_email; ?></b>
+          			<label for="email">
+          				<b><?php echo $entry_email; ?></b>
+          			</label>
 					<br />
           			<input type="text" name="email" value="" />
           			<br />
           			<br />
-          			<b><?php echo $entry_password; ?></b>
+          			<label for="password">
+          				<b><?php echo $entry_password; ?></b>
+          			</label>
 					<br />
           			<input type="password" name="password" value="" />
           			<br />
