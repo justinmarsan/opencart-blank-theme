@@ -1,17 +1,17 @@
 <?php echo $header; ?>
 <?php echo $column_left; ?>
 <?php echo $column_right; ?>
-<div id="content">
+<section id="content">
 	<?php echo $content_top; ?>
-  	<div class="breadcrumb">
+  	<section class="breadcrumb">
     	<?php foreach ($breadcrumbs as $breadcrumb) { ?>
     		<?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     	<?php } ?>
-  	</div>
+  	</section>
   	<h1><?php echo $heading_title; ?></h1>  
   	<?php if ($products) { ?>
   		<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="wishlist">
-    		<div class="wishlist-product">
+    		<section class="wishlist-product">
       			<table>
         			<thead>
           				<tr>
@@ -61,7 +61,7 @@
           				<?php } ?>
         			</tbody>
       			</table>
-    		</div>
+    		</section>
   		</form>
   		<div class="buttons">
     		<div class="left">
@@ -72,7 +72,7 @@
 			</div>
   		</div>
   	<?php } else { ?>
-  		<div class="content"><?php echo $text_empty; ?></div>
+  		<section class="content"><?php echo $text_empty; ?></section>
   		<div class="buttons">
     		<div class="right">
 				<a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a>
@@ -80,5 +80,5 @@
   		</div>
   	<?php } ?>
   	<?php echo $content_bottom; ?>
-</div>
+</section>
 <?php echo $footer; ?>
