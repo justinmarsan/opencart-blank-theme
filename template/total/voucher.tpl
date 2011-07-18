@@ -1,6 +1,8 @@
 <div>
   	<div class="cart-heading"><?php echo $heading_title; ?></div>
-  	<section class="cart-content" id="voucher"><?php echo $entry_voucher; ?>&nbsp;
+  	<section class="cart-content" id="voucher">
+		<label for="voucher"><?php echo $entry_voucher; ?></label>
+		&nbsp;
     	<input type="text" name="voucher" value="<?php echo $voucher; ?>" />
     	&nbsp;
 		<a id="button-voucher" class="button"><?php echo $button_voucher; ?></a>

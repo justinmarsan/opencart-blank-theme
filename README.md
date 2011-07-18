@@ -49,3 +49,4 @@ Labels Added in :
 - template/information/*
 - template/payment/*
 - template/product/*
+- template/total/*
