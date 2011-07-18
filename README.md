@@ -31,3 +31,4 @@ HTML5 Tags in :
 
 - template/common/*
 - template/account/*
+- template/affiliate/*
