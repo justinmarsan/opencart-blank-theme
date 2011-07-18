@@ -18,8 +18,7 @@
       		<table class="form">
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_firstname; ?>
+						<label for="firstname" class="required"><?php echo $entry_firstname; ?></label>
 					</td>
           			<td>
 						<input type="text" name="firstname" value="<?php echo $firstname; ?>" />
@@ -29,8 +28,7 @@
         			</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_lastname; ?>
+						<label for="lastname" class="required"><?php echo $entry_lastname; ?></label>
 					</td>
           			<td>
 						<input type="text" name="lastname" value="<?php echo $lastname; ?>" />
@@ -40,13 +38,14 @@
 					</td>
         		</tr>
         		<tr>
-          			<td><?php echo $entry_company; ?></td>
+          			<td>
+          				<label for="company"><?php echo $entry_company; ?></label>
+          			</td>
           			<td><input type="text" name="company" value="<?php echo $company; ?>" /></td>
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_address_1; ?>
+						<label for="address_1" class="required"><?php echo $entry_address_1; ?></label>
 					</td>
           			<td>
 						<input type="text" name="address_1" value="<?php echo $address_1; ?>" />
@@ -56,11 +55,15 @@
 					</td>
         		</tr>
         		<tr>
-          			<td><?php echo $entry_address_2; ?></td>
+          			<td>
+						<label for="address_2"><?php echo $entry_address_2; ?></label>
+					</td>
           			<td><input type="text" name="address_2" value="<?php echo $address_2; ?>" /></td>
         		</tr>
         		<tr>
-          			<td><span class="required">*</span> <?php echo $entry_city; ?></td>
+          			<td>
+						<label for="city" class="required"><?php echo $entry_city; ?></label>
+					</td>
           			<td>
 						<input type="text" name="city" value="<?php echo $city; ?>" />
             			<?php if ($error_city) { ?>
@@ -69,60 +72,64 @@
 					</td>
         		</tr>
         		<tr>
-          			<td><span class="required">*</span> <?php echo $entry_postcode; ?></td>
-          			<td><input type="text" name="postcode" value="<?php echo $postcode; ?>" />
-            		<?php if ($error_postcode) { ?>
-            			<span class="error"><?php echo $error_postcode; ?></span>
-            		<?php } ?>
-				</td>
-        	</tr>
-        	<tr>
-          		<td>
-					<span class="required">*</span> 
-					<?php echo $entry_country; ?>
-				</td>
-          		<td>
-					<select name="country_id" onchange="$('select[name=\'zone_id\']').load('index.php?route=account/address/zone&country_id=' + this.value + '&zone_id=<?php echo $zone_id; ?>');">
-              			<option value=""><?php echo $text_select; ?></option>
-              			<?php foreach ($countries as $country) { ?>
-              				<?php if ($country['country_id'] == $country_id) { ?>
-              					<option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
-              				<?php } else { ?>
-              					<option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
+          			<td>
+						<label for="postcode" class="required"><?php echo $entry_postcode; ?></label>
+					</td>
+          			<td>
+						<input type="text" name="postcode" value="<?php echo $postcode; ?>" />
+            			<?php if ($error_postcode) { ?>
+            				<span class="error"><?php echo $error_postcode; ?></span>
+            			<?php } ?>
+					</td>
+        		</tr>
+        		<tr>
+          			<td>
+						<label for="country_id" class="required"><?php echo $entry_country; ?></label>
+					</td>
+          			<td>
+						<select name="country_id" onchange="$('select[name=\'zone_id\']').load('index.php?route=account/address/zone&country_id=' + this.value + '&zone_id=<?php echo $zone_id; ?>');">
+              				<option value=""><?php echo $text_select; ?></option>
+              				<?php foreach ($countries as $country) { ?>
+              					<?php if ($country['country_id'] == $country_id) { ?>
+              						<option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
+              					<?php } else { ?>
+              						<option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
+              					<?php } ?>
               				<?php } ?>
-              			<?php } ?>
-            		</select>
-            		<?php if ($error_country) { ?>
-            			<span class="error"><?php echo $error_country; ?></span>
-            		<?php } ?>
-				</td>
-        	</tr>
-        	<tr>
-          		<td>
-					<span class="required">*</span> 
-					<?php echo $entry_zone; ?>
-				</td>
-          		<td>
-					<select name="zone_id"></select>
-            		<?php if ($error_zone) { ?>
-            			<span class="error"><?php echo $error_zone; ?></span>
-            		<?php } ?>
-				</td>
-        	</tr>
-        	<tr>
-          		<td><?php echo $entry_default; ?></td>
-          		<td>
-					<?php if ($default) { ?>
-            			<input type="radio" name="default" value="1" checked="checked" />
-            			<?php echo $text_yes; ?>
-            			<input type="radio" name="default" value="0" />
-            			<?php echo $text_no; ?>
-            		<?php } else { ?>
-            			<input type="radio" name="default" value="1" />
-            			<?php echo $text_yes; ?>
-            			<input type="radio" name="default" value="0" checked="checked" />
-            			<?php echo $text_no; ?>
-            		<?php } ?></td>
+            			</select>
+            			<?php if ($error_country) { ?>
+            				<span class="error"><?php echo $error_country; ?></span>
+            				<?php } ?>
+					</td>
+        		</tr>
+        		<tr>
+          			<td>
+						<label for="zone_id" class="required"><?php echo $entry_zone; ?></label>
+					</td>
+          			<td>
+						<select name="zone_id"></select>
+            			<?php if ($error_zone) { ?>
+            				<span class="error"><?php echo $error_zone; ?></span>
+            			<?php } ?>
+					</td>
+        		</tr>
+        		<tr>
+          			<td>
+						<label for="default"><?php echo $entry_default; ?></label>
+					</td>
+          			<td>
+						<?php if ($default) { ?>
+            				<input type="radio" name="default" value="1" checked="checked" />
+            				<?php echo $text_yes; ?>
+            				<input type="radio" name="default" value="0" />
+            					<?php echo $text_no; ?>
+            			<?php } else { ?>
+            				<input type="radio" name="default" value="1" />
+            				<?php echo $text_yes; ?>
+            				<input type="radio" name="default" value="0" checked="checked" />
+            				<?php echo $text_no; ?>
+            			<?php } ?>
+					</td>
         		</tr>
       		</table>
     	</section>

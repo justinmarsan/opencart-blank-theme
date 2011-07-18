@@ -38,3 +38,9 @@ HTML5 Tags in :
 - template/module/*
 - template/product/*
 - template/total/*
+
+
+Labels Added in :
+-----------------
+
+...
