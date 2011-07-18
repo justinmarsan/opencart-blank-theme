@@ -48,3 +48,4 @@ Labels Added in :
 - template/checkout/*
 - template/information/*
 - template/payment/*
+- template/product/*
