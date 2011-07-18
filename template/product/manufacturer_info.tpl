@@ -1,16 +1,16 @@
 <?php echo $header; ?>
 <?php echo $column_left; ?>
 <?php echo $column_right; ?>
-<div id="content">
+<section id="content">
 	<?php echo $content_top; ?>
-  	<div class="breadcrumb">
+  	<section class="breadcrumb">
     	<?php foreach ($breadcrumbs as $breadcrumb) { ?>
     		<?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     	<?php } ?>
-  	</div>
+  	</section>
   	<h1><?php echo $heading_title; ?></h1>
   	<?php if ($products) { ?>
-  		<div class="product-filter">
+  		<section class="product-filter">
     		<div class="display">
 				<b><?php echo $text_display; ?></b> 
 				<?php echo $text_list; ?> 
@@ -41,13 +41,13 @@
         			<?php } ?>
       			</select>
     		</div>
-  		</div>
+  		</section>
   		<div class="product-compare">
 			<a href="<?php echo $compare; ?>" id="compare_total"><?php echo $text_compare; ?></a>
 		</div>
-  		<div class="product-list">
+  		<section class="product-list">
     		<?php foreach ($products as $product) { ?>
-    			<div>
+    			<article>
       				<?php if ($product['thumb']) { ?>
       					<div class="image">
 							<a href="<?php echo $product['href']; ?>">
@@ -87,12 +87,12 @@
       				<div class="compare">
 						<a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php echo $button_compare; ?></a>
 					</div>
-    			</div>
+    			</article>
     		<?php } ?>
-  		</div>
+  		</section>
   		<div class="pagination"><?php echo $pagination; ?></div>
   	<?php } else { ?>
-  		<div class="content"><?php echo $text_empty; ?></div>
+  		<section class="content"><?php echo $text_empty; ?></section>
   		<div class="buttons">
     		<div class="right">
 				<a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a>
@@ -100,7 +100,7 @@
   		</div>
 	<?php } ?>
 	<?php echo $content_bottom; ?>
-</div>
+</section>
 <script type="text/javascript"><!--
 function display(view) {
 	if (view == 'list') {
