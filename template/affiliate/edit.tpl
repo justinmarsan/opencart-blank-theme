@@ -18,8 +18,7 @@
       		<table class="form">
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_firstname; ?>
+						<label for="firstname" class="required"><?php echo $entry_firstname; ?></label>
 					</td>
           			<td>
 						<input type="text" name="firstname" value="<?php echo $firstname; ?>" />
@@ -30,8 +29,7 @@
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_lastname; ?>
+						<label for="lastname" class="required"><?php echo $entry_lastname; ?></label>
 					</td>
           			<td>
 						<input type="text" name="lastname" value="<?php echo $lastname; ?>" />
@@ -42,8 +40,7 @@
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_email; ?>
+						<label for="email" class="required"><?php echo $entry_email; ?></label>
 					</td>
           			<td>
 						<input type="text" name="email" value="<?php echo $email; ?>" />
@@ -54,8 +51,7 @@
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_telephone; ?>
+						<label for="telephone" class="required"><?php echo $entry_telephone; ?></label>
 					</td>
           			<td>
 						<input type="text" name="telephone" value="<?php echo $telephone; ?>" />
@@ -65,7 +61,9 @@
 					</td>
         		</tr>
         		<tr>
-          			<td><?php echo $entry_fax; ?></td>
+          			<td>
+						<label for="fax"><?php echo $entry_fax; ?></label>
+					</td>
           			<td><input type="text" name="fax" value="<?php echo $fax; ?>" /></td>
         		</tr>
       		</table>
@@ -74,17 +72,20 @@
     	<section class="content">
       		<table class="form">
         		<tr>
-          			<td><?php echo $entry_company; ?></td>
+          			<td>
+						<label for="company"><?php echo $entry_company; ?></label>
+					</td>
           			<td><input type="text" name="company" value="<?php echo $company; ?>" /></td>
         		</tr>
         		<tr>
-          			<td><?php echo $entry_website; ?></td>
+          			<td>
+						<label for="website"><?php echo $entry_website; ?></label>
+					</td>
           			<td><input type="text" name="website" value="<?php echo $website; ?>" /></td>
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_address_1; ?>
+						<label for="address_1" class="required"><?php echo $entry_address_1; ?></label>
 					</td>
           			<td>
 						<input type="text" name="address_1" value="<?php echo $address_1; ?>" />
@@ -94,13 +95,15 @@
 					</td>
         		</tr>
         		<tr>
-          			<td><?php echo $entry_address_2; ?></td>
+          			<td>
+						<label for="address_2"><?php echo $entry_address_2; ?></label>
+					</td>
           			<td><input type="text" name="address_2" value="<?php echo $address_2; ?>" /></td>
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_city; ?></td>
+						<label for="city" class="required"><?php echo $entry_city; ?></label>
+					</td>
           			<td>
 						<input type="text" name="city" value="<?php echo $city; ?>" />
             			<?php if ($error_city) { ?>
@@ -110,8 +113,7 @@
        			</tr>
        			<tr>
        				<td>
-						<span class="required">*</span> 
-						<?php echo $entry_postcode; ?>
+						<label for="postcode" class="required"><?php echo $entry_postcode; ?></label>
 					</td>
        				<td>
 						<input type="text" name="postcode" value="<?php echo $postcode; ?>" />
@@ -122,8 +124,7 @@
        			</tr>
        			<tr>
        				<td>
-						<span class="required">*</span> 
-						<?php echo $entry_country; ?>
+						<label for="country_id" class="required"><?php echo $entry_country; ?></label>
 					</td>
        				<td>
 						<select name="country_id" onchange="$('select[name=\'zone_id\']').load('index.php?route=affiliate/edit/zone&country_id=' + this.value + '&zone_id=<?php echo $zone_id; ?>');">
@@ -147,8 +148,7 @@
        			</tr>
        			<tr>
        				<td>
-						<span class="required">*</span> 
-						<?php echo $entry_zone; ?>
+						<label for="zone_id" class="required"><?php echo $entry_zone; ?></label>
 					</td>
        				<td>
 						<select name="zone_id"></select>
