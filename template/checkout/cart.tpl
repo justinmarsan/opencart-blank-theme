@@ -2,13 +2,13 @@
 <div class="container">
 	<?php echo $column_left; ?>
 	<?php echo $column_right; ?>
-  	<div id="content">
+  	<section id="content">
 		<?php echo $content_top; ?>
-    	<div class="breadcrumb">
+    	<section class="breadcrumb">
       		<?php foreach ($breadcrumbs as $breadcrumb) { ?>
       			<?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
       		<?php } ?>
-    	</div>
+    	</section>
     	<h1>
 			<?php echo $heading_title; ?>
       		<?php if ($weight) { ?>
@@ -25,7 +25,7 @@
     		<div class="warning"><?php echo $error_warning; ?></div>
     	<?php } ?>
     	<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="basket">
-      		<div class="cart-info">
+      		<section class="cart-info">
         		<table>
           			<thead>
             			<tr>
@@ -83,14 +83,14 @@
             			<?php } ?>
           			</tbody>
         		</table>
-      		</div>
+      		</section>
     	</form>
-    	<div class="cart-module">
+    	<section class="cart-module">
       		<?php foreach ($modules as $module) { ?>
       			<?php echo $module; ?>
       		<?php } ?>
-    	</div>
-    	<div class="cart-total">
+    	</section>
+    	<section class="cart-total">
       		<table>
         		<?php foreach ($totals as $total) { ?>
         			<tr>
@@ -102,7 +102,7 @@
         			</tr>
         		<?php } ?>
       		</table>
-    	</div>
+    	</section>
     	<div class="buttons">
       		<div class="left">
 				<a onclick="$('#basket').submit();" class="button"><?php echo $button_update; ?></a>
@@ -115,7 +115,7 @@
 			</div>
     	</div>
     	<?php echo $content_bottom; ?>
-	</div>
+	</section>
 </div>
 <script type="text/javascript"><!--
 $('.cart-module .cart-heading').bind('click', function() {
