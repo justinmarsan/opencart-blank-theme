@@ -25,3 +25,8 @@ Styles grouped in :
 -------------------
 
 - stylesheet/stylesheet.css
+
+HTML5 Tags in :
+---------------
+
+- template/common/*

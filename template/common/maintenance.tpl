@@ -1,5 +1,5 @@
 <?php echo $header; ?>
-<div id="content">
+<section id="content">
 	<?php echo $message; ?>
-</div>
+</section>
 <?php echo $footer; ?>

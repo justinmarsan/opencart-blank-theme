@@ -1,7 +1,7 @@
 <?php if ($modules) { ?>
-	<div id="column-left">
+	<aside id="column-left">
   		<?php foreach ($modules as $module) { ?>
   			<?php echo $module; ?>
   		<?php } ?>
-	</div>
+	</aside>
 <?php } ?> 
