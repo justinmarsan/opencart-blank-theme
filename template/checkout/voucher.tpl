@@ -17,8 +17,7 @@
     	<table class="form">
       		<tr>
         		<td>
-					<span class="required">*</span> 
-					<?php echo $entry_to_name; ?>
+					<label for="to_name" class="required"><?php echo $entry_to_name; ?></label>
 				</td>
         		<td>
 					<input type="text" name="to_name" value="<?php echo $to_name; ?>" />
@@ -29,8 +28,7 @@
       		</tr>
       		<tr>
         		<td>
-					<span class="required">*</span> 
-					<?php echo $entry_to_email; ?>
+					<label for="to_email" class="required"><?php echo $entry_to_email; ?></label>
 				</td>
         		<td>
 					<input type="text" name="to_email" value="<?php echo $to_email; ?>" />
@@ -41,8 +39,7 @@
       		</tr>
       		<tr>
         		<td>
-					<span class="required">*</span> 
-					<?php echo $entry_from_name; ?>
+					<label for="from_name" class="required"><?php echo $entry_from_name; ?></label>
 				</td>
         		<td>
 					<input type="text" name="from_name" value="<?php echo $from_name; ?>" />
@@ -53,8 +50,7 @@
       		</tr>
       		<tr>
         		<td>
-					<span class="required">*</span> 
-					<?php echo $entry_from_email; ?>
+					<label for="from_email" class="required"><?php echo $entry_from_email; ?></label>
 				</td>
         		<td>
 					<input type="text" name="from_email" value="<?php echo $from_email; ?>" />
@@ -64,11 +60,15 @@
 				</td>
       		</tr>
       		<tr>
-        		<td><?php echo $entry_message; ?></td>
+        		<td>
+        			<label for="message"><?php echo $entry_message; ?></label>
+        		</td>
         		<td><textarea name="message" cols="40" rows="5"><?php echo $message; ?></textarea></td>
       		</tr>
       		<tr>
-        		<td><span class="required">*</span> <?php echo $entry_amount; ?></td>
+        		<td>
+        			<label for="amount" class="required"><?php echo $entry_amount; ?></label>
+        		</td>
         		<td>
 					<input type="text" name="amount" value="<?php echo $amount; ?>" size="5" />
           			<?php if ($error_amount) { ?>
@@ -78,8 +78,7 @@
    			</tr>
    			<tr>
        			<td>
-					<span class="required">*</span> 
-					<?php echo $entry_theme; ?>
+					<label for="voucher_theme_id" class="required"><?php echo $entry_theme; ?></label>
 				</td>
        			<td>
 					<?php foreach ($voucher_themes as $voucher_theme) { ?>
