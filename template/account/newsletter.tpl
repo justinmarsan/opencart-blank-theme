@@ -16,7 +16,9 @@
    		<section class="content">
    			<table class="form">
       			<tr>
-       				<td><?php echo $entry_newsletter; ?></td>
+       				<td>
+						<label for="newsletter"><?php echo $entry_newsletter; ?></label>
+					</td>
        				<td>
 						<?php if ($newsletter) { ?>
             				<input type="radio" name="newsletter" value="1" checked="checked" />
