@@ -5,8 +5,7 @@
     	<table id="shipping">
       		<tr>
         		<td>
-					<span class="required">*</span> 
-					<?php echo $entry_country; ?>
+					<label for="country_id" class="required"><?php echo $entry_country; ?></label>
 				</td>
         		<td>
 					<select name="country_id" onchange="$('select[name=\'zone_id\']').load('index.php?route=total/shipping/zone&country_id=' + this.value + '&zone_id=<?php echo $zone_id; ?>');">
@@ -23,15 +22,13 @@
       		</tr>
       		<tr>
         		<td>
-					<span class="required">*</span> 
-					<?php echo $entry_zone; ?>
+					<label for="zone_id" class="required"><?php echo $entry_zone; ?></label>
 				</td>
         		<td><select name="zone_id"></select></td>
       		</tr>
       		<tr>
         		<td>
-					<span class="required">*</span> 
-					<?php echo $entry_postcode; ?>
+					<label for="postcode" class="required"><?php echo $entry_postcode; ?></label>
 				</td>
         		<td><input type="text" name="postcode" value="<?php echo $postcode; ?>" /></td>
       		</tr>
