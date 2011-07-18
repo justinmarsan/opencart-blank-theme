@@ -688,6 +688,10 @@ a:hover {
 	font-weight: bold;
 }
 
+.required {
+	font-weight:bold;
+}
+
 .error {
     /*color: #FF0000;*/
 }
