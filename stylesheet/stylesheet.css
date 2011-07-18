@@ -957,7 +957,7 @@ a.button:hover {
 	border-top: 1px solid #DDDDDD;
 	border-left: 1px solid #DDDDDD;
 	border-right: 1px solid #DDDDDD; 
-	background: #FFFFFF url('../image/tab.png') repeat-x;
+	background: #EEEEEE;
 }
 
 .htabs a.selected {
@@ -1014,7 +1014,7 @@ a.button:hover {
 	-khtml-border-radius: 7px 7px 0px 0px;
 	border-radius: 7px 7px 0px 0px;
 	border: 1px solid #DBDEE1;
-	background: url('../image/background.png') repeat-x;
+	background: #EEEEEE;
 }
 
 .box .box-content {
@@ -2585,30 +2585,3 @@ a.button:hover {
 }
 /** / Typography **/
 /********* / BANNER *********/
-
-
-
-
-
-
-
-/* layout */
-/* menu */
-/* button */
-/* box */
-/* box products */
-/* box category */
-/* content */
-/* category */
-/* manufacturer */
-/* product */
-/* Product */
-/* wishlist */
-/* orders */
-/* returns */
-/* cart */
-/* checkout */
-/* footer */ 
-/* banner */
-
-
