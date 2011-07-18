@@ -20,8 +20,7 @@
       		<table class="form">
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_firstname; ?>
+						<label for="firstname" class="required"><?php echo $entry_firstname; ?></label>
 					</td>
           			<td>
 						<input type="text" name="firstname" value="<?php echo $firstname; ?>" />
@@ -32,8 +31,7 @@
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_lastname; ?>
+						<label for="lastname" class="required"><?php echo $entry_lastname; ?></label>
 					</td>
           			<td>
 						<input type="text" name="lastname" value="<?php echo $lastname; ?>" />
@@ -44,8 +42,7 @@
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_email; ?>
+						<label for="email" class="required"><?php echo $entry_email; ?></label>
 					</td>
           			<td>
 						<input type="text" name="email" value="<?php echo $email; ?>" />
@@ -56,8 +53,7 @@
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_telephone; ?>
+						<label for="telephone" class="required"><?php echo $entry_telephone; ?></label>
 					</td>
           			<td>
 						<input type="text" name="telephone" value="<?php echo $telephone; ?>" />
@@ -67,7 +63,9 @@
 					</td>
         		</tr>
         		<tr>
-          			<td><?php echo $entry_fax; ?></td>
+          			<td>
+						<label for="fax"><?php echo $entry_fax; ?></label>
+					</td>
           			<td><input type="text" name="fax" value="<?php echo $fax; ?>" /></td>
         		</tr>
       		</table>
@@ -76,15 +74,21 @@
     	<section class="content">
       		<table class="form">
         		<tr>
-          			<td><?php echo $entry_company; ?></td>
+          			<td>
+						<label for="company"><?php echo $entry_company; ?></label>
+					</td>
           			<td><input type="text" name="company" value="<?php echo $company; ?>" /></td>
         		</tr>
         		<tr>
-          			<td><?php echo $entry_website; ?></td>
+          			<td>
+						<label for="website"><?php echo $entry_website; ?></label>
+					</td>
           			<td><input type="text" name="website" value="<?php echo $website; ?>" /></td>
         		</tr>
         		<tr>
-          			<td><span class="required">*</span> <?php echo $entry_address_1; ?></td>
+          			<td>
+						<label for="address_1" class="required"><?php echo $entry_address_1; ?></label>
+					</td>
           			<td>
 						<input type="text" name="address_1" value="<?php echo $address_1; ?>" />
             			<?php if ($error_address_1) { ?>
@@ -93,11 +97,15 @@
 					</td>
         		</tr>
         		<tr>
-          			<td><?php echo $entry_address_2; ?></td>
+          			<td>
+						<label for="address_2"><?php echo $entry_address_2; ?></label>
+					</td>
           			<td><input type="text" name="address_2" value="<?php echo $address_2; ?>" /></td>
         		</tr>
         		<tr>
-          			<td><span class="required">*</span> <?php echo $entry_city; ?></td>
+          			<td>
+						<label for="city" class="required"><?php echo $entry_city; ?></label>
+					</td>
           			<td><input type="text" name="city" value="<?php echo $city; ?>" />
             			<?php if ($error_city) { ?>
             				<span class="error"><?php echo $error_city; ?></span>
@@ -106,8 +114,7 @@
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_postcode; ?>
+						<label for="postcode" class="required"><?php echo $entry_postcode; ?></label>
 					</td>
           			<td>
 						<input type="text" name="postcode" value="<?php echo $postcode; ?>" />
@@ -118,8 +125,7 @@
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_country; ?>
+						<label for="country_id" class="required"><?php echo $entry_country; ?></label>
 					</td>
           			<td>
 						<select name="country_id" onchange="$('select[name=\'zone_id\']').load('index.php?route=account/register/zone&country_id=' + this.value + '&zone_id=<?php echo $zone_id; ?>');">
@@ -141,8 +147,7 @@
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_zone; ?>
+						<label for="zone_id" class="required"><?php echo $entry_zone; ?></label>
 					</td>
           			<td>
 						<select name="zone_id"></select>
@@ -158,11 +163,15 @@
       		<table class="form">
         		<tbody>
           			<tr>
-            			<td><?php echo $entry_tax; ?></td>
+            			<td>
+							<label for="tax"><?php echo $entry_tax; ?></label>
+						</td>
             			<td><input type="text" name="tax" value="<?php echo $tax; ?>" /></td>
           			</tr>
           			<tr>
-            			<td><?php echo $entry_payment; ?></td>
+            			<td>
+							<label for="payment"><?php echo $entry_payment; ?></label>
+						</td>
             			<td>
 							<?php if ($payment == 'cheque') { ?>
               					<input type="radio" name="payment" value="cheque" id="cheque" checked="checked" />
@@ -187,35 +196,49 @@
         		</tbody>
         		<tbody id="payment-cheque" class="payment">
           			<tr>
-            			<td><?php echo $entry_cheque; ?></td>
+            			<td>
+							<label for="cheque"><?php echo $entry_cheque; ?></label>
+						</td>
             			<td><input type="text" name="cheque" value="<?php echo $cheque; ?>" /></td>
           			</tr>
         		</tbody>
         		<tbody class="payment" id="payment-paypal">
           			<tr>
-            			<td><?php echo $entry_paypal; ?></td>
+            			<td>
+							<label for="paypal"><?php echo $entry_paypal; ?></label>
+						</td>
             			<td><input type="text" name="paypal" value="<?php echo $paypal; ?>" /></td>
           			</tr>
         		</tbody>
         		<tbody id="payment-bank" class="payment">
           			<tr>
-            			<td><?php echo $entry_bank_name; ?></td>
+            			<td>
+            				<label for="bank_name"><?php echo $entry_bank_name; ?></label>
+            			</td>
             			<td><input type="text" name="bank_name" value="<?php echo $bank_name; ?>" /></td>
           			</tr>
           			<tr>
-            			<td><?php echo $entry_bank_branch_number; ?></td>
+            			<td>
+            				<label for="bank_branch_number"><?php echo $entry_bank_branch_number; ?></label>
+            			</td>
             			<td><input type="text" name="bank_branch_number" value="<?php echo $bank_branch_number; ?>" /></td>
           			</tr>
           			<tr>
-            			<td><?php echo $entry_bank_swift_code; ?></td>
+            			<td>
+            				<label for="bank_swift_code"><?php echo $entry_bank_swift_code; ?></label>
+            			</td>
             			<td><input type="text" name="bank_swift_code" value="<?php echo $bank_swift_code; ?>" /></td>
           			</tr>
           			<tr>
-            			<td><?php echo $entry_bank_account_name; ?></td>
+            			<td>
+            				<label for="bank_account_name"><?php echo $entry_bank_account_name; ?></label>
+            			</td>
             			<td><input type="text" name="bank_account_name" value="<?php echo $bank_account_name; ?>" /></td>
           			</tr>
           			<tr>
-            			<td><?php echo $entry_bank_account_number; ?></td>
+            			<td>
+            				<label for="bank_account_number"><?php echo $entry_bank_account_number; ?></label>
+            			</td>
             			<td><input type="text" name="bank_account_number" value="<?php echo $bank_account_number; ?>" /></td>
           			</tr>
         		</tbody>
@@ -226,8 +249,7 @@
       		<table class="form">
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_password; ?>
+						<label for="password"><?php echo $entry_password; ?></label>
 					</td>
           			<td>
 						<input type="password" name="password" value="<?php echo $password; ?>" />
@@ -238,8 +260,7 @@
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_confirm; ?>
+						<label for="confirm" class="required"><?php echo $entry_confirm; ?></label>
 					</td>
           			<td>
 						<input type="password" name="confirm" value="<?php echo $confirm; ?>" />
