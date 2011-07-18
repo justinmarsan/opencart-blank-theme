@@ -49,7 +49,7 @@ textarea {
 }
 
 select {
-    padding: 2px
+    padding: 2px;
 }
 
 /** / Layout **/
@@ -58,17 +58,17 @@ select {
 
 h1,
 .welcome {
-    text-shadow: 0 0 1px rgba(0, 0, 0, .01)
+    text-shadow: 0 0 1px rgba(0, 0, 0, .01);
 }
 
 a,
 a:visited,
 a b {
-    cursor: pointer
+    cursor: pointer;
 }
 
 a img {
-    border: none
+    border: none;
 }
 
 input[type='text'],
@@ -84,7 +84,7 @@ select {
 }
 
 label {
-    cursor: pointer
+    cursor: pointer;
 }
 
 /** / Skin **/
@@ -103,7 +103,7 @@ input,
 textarea,
 select,
 a {
-    font-size: 12px
+    font-size: 12px;
 }
 
 h1,
@@ -127,7 +127,7 @@ a b {
 }
 
 a:hover {
-    text-decoration: none
+    text-decoration: none;
 }
 
 /** / Typography **/
@@ -162,11 +162,11 @@ a:hover {
 
 #column-left + #column-right + #content,
 #column-left + #content {
-    margin-left: 195px
+    margin-left: 195px;
 }
 
 #column-right + #content {
-    margin-right: 195px
+    margin-right: 195px;
 }
 
 /** / Layout **/
@@ -236,7 +236,7 @@ a:hover {
 }
 
 #header #cart .heading a span {
-    padding-right: 15px
+    padding-right: 15px;
 }
 
 #header #cart .content {
@@ -255,7 +255,7 @@ a:hover {
 }
 
 #header #cart.active .content {
-    display: block
+    display: block;
 }
 
 #header #cart .cart {
@@ -270,19 +270,19 @@ a:hover {
 }
 
 #header #cart .cart .image {
-    width: 1px
+    width: 1px;
 }
 
 #header #cart .cart .quantity {
-    text-align: right
+    text-align: right;
 }
 
 #header #cart .cart td.total {
-    text-align: right
+    text-align: right;
 }
 
 #header #cart .cart .remove {
-    text-align: right
+    text-align: right;
 }
 
 #header #cart table.total {
@@ -356,7 +356,7 @@ a:hover {
 /*** Skin ***/
 
 #language img {
-    cursor: pointer
+    cursor: pointer;
 }
 
 #currency a {
@@ -400,15 +400,15 @@ a:hover {
 }
 
 #header #cart .cart td {
-    border-bottom: 1px solid #EEEEEE
+    border-bottom: 1px solid #EEEEEE;
 }
 
 #header #cart .cart .image img {
-    border: 1px solid #EEEEEE
+    border: 1px solid #EEEEEE;
 }
 
 #header #cart .cart .remove img {
-    cursor: pointer
+    cursor: pointer;
 }
 
 #header .button-search {
@@ -430,7 +430,7 @@ a:hover {
 }
 
 #header .links a + a {
-    border-left: 1px solid #CCC
+    border-left: 1px solid #CCC;
 }
 
 /** / Skin **/
@@ -469,23 +469,23 @@ a:hover {
 }
 
 #header #cart .cart td {
-    color: #000
+    color: #000;
 }
 
 #header #cart .cart .image img {
-    text-align: left
+    text-align: left;
 }
 
 #header #cart .cart .name small {
-    color: #666
+    color: #666;
 }
 
 #header #cart table.total td {
-    color: #000
+    color: #000;
 }
 
 #header #welcome {
-    color: #999999
+    color: #999999;
 }
 
 #header .links a {
@@ -534,15 +534,15 @@ a:hover {
 }
 
 #menu > ul > li:hover > div {
-    display: table
+    display: table;
 }
 
 #menu > ul > li > div > ul {
-    display: table-cell
+    display: table-cell;
 }
 
 #menu > ul > li ul + ul {
-    padding-left: 20px
+    padding-left: 20px;
 }
 
 #menu > ul > li ul > li > a {
@@ -569,7 +569,7 @@ a:hover {
 }
 
 #menu > ul > li:hover {
-    background: #000
+    background: #000;
 }
 
 #menu > ul > li > div {
@@ -583,7 +583,7 @@ a:hover {
 }
 
 #menu > ul > li ul > li > a:hover {
-    background: #000000
+    background: #000000;
 }
 
 /** / Skin **/
@@ -591,7 +591,7 @@ a:hover {
 /*** Typography ***/
 
 #menu ul {
-    list-style: none
+    list-style: none;
 }
 
 #menu > ul > li > a {
@@ -607,7 +607,7 @@ a:hover {
 }
 
 #menu > ul > li > div > ul > li > a {
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 
 /** / Typography **/
@@ -619,7 +619,7 @@ a:hover {
 /*** Layout ***/
 
 .breadcrumb {
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .success,
@@ -640,11 +640,11 @@ a:hover {
 }
 
 .error {
-    display: block
+    display: block;
 }
 
 .help {
-    display: block
+    display: block;
 }
 
 /** / Layout **/
@@ -675,7 +675,7 @@ a:hover {
 .warning .close,
 .attention .close,
 .information .close {
-    cursor: pointer
+    cursor: pointer;
 }
 
 /** / Skin **/
@@ -683,14 +683,14 @@ a:hover {
 /*** Typography ***/
 
 .breadcrumb {
-    color: #CCCCCC
+    color: #CCCCCC;
 }
 
 .success,
 .warning,
 .attention,
 .information {
-    color: #555555
+    color: #555555;
 }
 
 .required {
@@ -699,7 +699,7 @@ a:hover {
 }
 
 .error {
-    color: #FF0000
+    color: #FF0000;
 }
 
 .help {
@@ -724,16 +724,16 @@ table.form {
 }
 
 table.form tr td:first-child {
-    width: 150px
+    width: 150px;
 }
 
 table.form td {
-    padding: 4px
+    padding: 4px;
 }
 
 input.large-field,
 select.large-field {
-    width: 300px
+    width: 300px;
 }
 
 table.list {
@@ -742,7 +742,7 @@ table.list {
     margin-bottom: 20px;
 }
 
-table.list thead td {
+table.list thead td {;
     padding: 0px 5px
 }
 
@@ -754,12 +754,12 @@ table.list tbody td {
 table.list .left,
 table.list .right,
 table.list .center {
-    padding: 7px
+    padding: 7px;
 }
 
 table.list .asc,
 table.list .desc {
-    padding-right: 15px
+    padding-right: 15px;
 }
 
 /** / Layout **/
@@ -777,15 +777,15 @@ table.list td {
 }
 
 table.list thead td {
-    background-color: #EFEFEF
+    background-color: #EFEFEF;
 }
 
 table.list .asc {
-    background: url('../image/asc.png') right center no-repeat
+    background: url('../image/asc.png') right center no-repeat;
 }
 
 table.list .desc {
-    background: url('../image/desc.png') right center no-repeat
+    background: url('../image/desc.png') right center no-repeat;
 }
 
 /** / Skin **/
@@ -793,7 +793,7 @@ table.list .desc {
 /*** Typography ***/
 
 table.form > * > * > td {
-    color: #000000
+    color: #000000;
 }
 
 table.list thead td a,
@@ -804,19 +804,19 @@ table.list thead td a,
 }
 
 table.list tbody td a {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 table.list .left {
-    text-align: left
+    text-align: left;
 }
 
 table.list .right {
-    text-align: right
+    text-align: right;
 }
 
 table.list .center {
-    text-align: center
+    text-align: center;
 }
 
 /** / Typography **/
@@ -835,7 +835,7 @@ table.list .center {
 }
 
 .pagination .links {
-    float: left
+    float: left;
 }
 
 .pagination .links a {
@@ -858,11 +858,11 @@ table.list .center {
 /*** Skin ***/
 
 .pagination {
-    border-top: 1px solid #EEEEEE
+    border-top: 1px solid #EEEEEE;
 }
 
 .pagination .links a {
-    border: 1px solid #EEEEEE
+    border: 1px solid #EEEEEE;
 }
 
 .pagination .links b {
@@ -905,11 +905,11 @@ a.button {
 }
 
 .buttons .left {
-    float: left
+    float: left;
 }
 
 .buttons .right {
-    float: right
+    float: right;
 }
 
 .buttons .center {
@@ -931,7 +931,7 @@ a.button {
 }
 
 a.button:hover {
-    background: blue
+    background: blue;
 }
 
 .buttons {
@@ -951,23 +951,23 @@ a.button {
 }
 
 a.button:hover {
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 
 .buttons {
-    background: #FFFFFF
+    background: #FFFFFF;
 }
 
 .buttons .left {
-    text-align: left
+    text-align: left;
 }
 
 .buttons .right {
-    text-align: right
+    text-align: right;
 }
 
 .buttons .center {
-    text-align: center
+    text-align: center;
 }
 
 /** / Typography **/
@@ -979,7 +979,7 @@ a.button:hover {
 /*** Layout ***/
 
 .htabs {
-    height: 30px
+    height: 30px;
 }
 
 .htabs a {
@@ -989,7 +989,7 @@ a.button:hover {
 }
 
 .htabs a.selected {
-    padding-bottom: 7px
+    padding-bottom: 7px;
 }
 
 .tab-content {
@@ -1004,7 +1004,7 @@ a.button:hover {
 /*** Skin ***/
 
 .htabs {
-    border-bottom: 1px solid #DDDDDD
+    border-bottom: 1px solid #DDDDDD;
 }
 
 .htabs a {
@@ -1015,7 +1015,7 @@ a.button:hover {
 }
 
 .htabs a.selected {
-    background: #FFFFFF
+    background: #FFFFFF;
 }
 
 .tab-content {
@@ -1029,7 +1029,7 @@ a.button:hover {
 /*** Typography ***/
 
 .htabs {
-    line-height: 16px
+    line-height: 16px;
 }
 
 .htabs a {
@@ -1050,15 +1050,15 @@ a.button:hover {
 /*** Layout ***/
 
 .box {
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .box .box-heading {
-    padding: 8px 10px 7px 10px
+    padding: 8px 10px 7px 10px;
 }
 
 .box .box-content {
-    padding: 10px
+    padding: 10px;
 }
 
 /** / Layout **/
@@ -1125,7 +1125,7 @@ a.button:hover {
 }
 
 .box-product .image img {
-    padding: 3px
+    padding: 3px;
 }
 
 .box-product .name a {
@@ -1148,7 +1148,7 @@ a.button:hover {
 /*** Skin ***/
 
 .box-product .image img {
-    border: 1px solid #E7E7E7
+    border: 1px solid #E7E7E7;
 }
 
 /** / Skin **/
@@ -1172,7 +1172,7 @@ a.button:hover {
 }
 
 .box-product .price-new {
-    font-weight: bold
+    font-weight: bold;
 }
 
 /** / Typography **/
@@ -1184,7 +1184,7 @@ a.button:hover {
 /*** Layout ***/
 
 .box-category {
-    margin-top: -5px
+    margin-top: -5px;
 }
 
 .box-category ul {
@@ -1193,19 +1193,19 @@ a.button:hover {
 }
 
 .box-category > ul > li {
-    padding: 8px 8px 8px 0px
+    padding: 8px 8px 8px 0px;
 }
 
 .box-category > ul > li ul {
-    display: none
+    display: none;
 }
 
 .box-category > ul > li a.active + ul {
-    display: block
+    display: block;
 }
 
 .box-category > ul > li ul > li {
-    padding: 5px 5px 0px 10px
+    padding: 5px 5px 0px 10px;
 }
 
 .box-category > ul > li ul > li > a {
@@ -1218,7 +1218,7 @@ a.button:hover {
 /*** Skin ***/
 
 .box-category > ul > li + li {
-    border-top: 1px solid #EEEEEE
+    border-top: 1px solid #EEEEEE;
 }
 
 /** / Skin **/
@@ -1226,7 +1226,7 @@ a.button:hover {
 /*** Typography ***/
 
 .box-category ul {
-    list-style: none
+    list-style: none;
 }
 
 .box-category > ul > li > a {
@@ -1235,11 +1235,11 @@ a.button:hover {
 }
 
 .box-category > ul > li a.active {
-    font-weight: bold
+    font-weight: bold;
 }
 
 .box-category > ul > li ul > li > a.active {
-    font-weight: bold
+    font-weight: bold;
 }
 
 .category-list .div a {
@@ -1276,7 +1276,7 @@ a.button:hover {
 /*** Skin ***/
 
 #content .content {
-    border: 1px solid #EEEEEE
+    border: 1px solid #EEEEEE;
 }
 
 /** / Skin **/
@@ -1313,7 +1313,7 @@ a.button:hover {
 /*** Skin ***/
 
 .category-info .image {
-    border: 1px solid #E7E7E7
+    border: 1px solid #E7E7E7;
 }
 
 /** / Skin **/
@@ -1326,7 +1326,7 @@ a.button:hover {
 }
 
 .manufacturer-list ul {
-    list-style: none
+    list-style: none;
 }
 
 /** / Typography **/
@@ -1349,7 +1349,7 @@ a.button:hover {
 }
 
 .manufacturer-content {
-    padding: 8px
+    padding: 8px;
 }
 
 .manufacturer-list ul {
@@ -1365,11 +1365,11 @@ a.button:hover {
 /*** Skin ***/
 
 .manufacturer-list {
-    border: 1px solid #DBDEE1
+    border: 1px solid #DBDEE1;
 }
 
 .manufacturer-heading {
-    background: #F8F8F8
+    background: #F8F8F8;
 }
 
 /** / Skin **/
@@ -1392,7 +1392,7 @@ a.button:hover {
 }
 
 .product-filter .sort {
-    float: right
+    float: right;
 }
 
 .product-filter .limit {
@@ -1420,7 +1420,7 @@ a.button:hover {
 .product-list > article + div,
 .product-list > div + article,
 .product-list > article + article {
-    padding-top: 16px
+    padding-top: 16px;
 }
 
 .product-list .image {
@@ -1429,11 +1429,11 @@ a.button:hover {
 }
 
 .product-list .image img {
-    padding: 3px
+    padding: 3px;
 }
 
 .product-list .name {
-    margin-bottom: 3px
+    margin-bottom: 3px;
 }
 
 .product-list .description {
@@ -1448,12 +1448,12 @@ a.button:hover {
 }
 
 .product-list .cart {
-    margin-bottom: 3px
+    margin-bottom: 3px;
 }
 
 .product-list .wishlist,
 .product-list .compare {
-    margin-bottom: 3px
+    margin-bottom: 3px;
 }
 
 .product-list .wishlist a {
@@ -1491,7 +1491,7 @@ a.button:hover {
 }
 
 .product-grid .description {
-    display: none
+    display: none;
 }
 
 .product-grid .rating {
@@ -1505,16 +1505,16 @@ a.button:hover {
 }
 
 .product-grid .price .price-tax {
-    display: none
+    display: none;
 }
 
 .product-grid .cart {
-    margin-bottom: 3px
+    margin-bottom: 3px;
 }
 
 .product-grid .wishlist,
 .product-grid .compare {
-    margin-bottom: 3px
+    margin-bottom: 3px;
 }
 
 .product-grid .wishlist a {
@@ -1538,7 +1538,7 @@ a.button:hover {
 }
 
 .product-info > .left + .right {
-    margin-left: 265px
+    margin-left: 265px;
 }
 
 .product-info .image {
@@ -1599,15 +1599,15 @@ a.button:hover {
 }
 
 .product-info .review {
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .product-info .review > div {
-    padding: 8px
+    padding: 8px;
 }
 
 .product-info .review .share {
-    overflow: auto
+    overflow: auto;
 }
 
 /** / Layout **/
@@ -1615,43 +1615,43 @@ a.button:hover {
 /*** Skin ***/
 
 .product-filter {
-    border-bottom: 1px solid #EEEEEE
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .product-list > div + div {
-    border-top: 1px solid #EEEEEE
+    border-top: 1px solid #EEEEEE;
 }
 
 .product-list .image img {
-    border: 1px solid #E7E7E7
+    border: 1px solid #E7E7E7;
 }
 
 .product-list .wishlist a {
-    background: url('../image/add.png') left center no-repeat
+    background: url('../image/add.png') left center no-repeat;
 }
 
 .product-list .compare a {
-    background: url('../image/add.png') left 60% no-repeat
+    background: url('../image/add.png') left 60% no-repeat;
 }
 
 .product-grid .image img {
-    border: 1px solid #E7E7E7
+    border: 1px solid #E7E7E7;
 }
 
 .product-grid .wishlist a {
-    background: url('../image/add.png') left center no-repeat
+    background: url('../image/add.png') left center no-repeat;
 }
 
 .product-grid .compare a {
-    background: url('../image/add.png') left center no-repeat
+    background: url('../image/add.png') left center no-repeat;
 }
 
 .product-info .image {
-    border: 1px solid #E7E7E7
+    border: 1px solid #E7E7E7;
 }
 
 .product-info .image-additional img {
-    border: 1px solid #E7E7E7
+    border: 1px solid #E7E7E7;
 }
 
 .product-info .description {
@@ -1660,15 +1660,15 @@ a.button:hover {
 }
 
 .product-info .price {
-    border-bottom: 1px solid #E7E7E7
+    border-bottom: 1px solid #E7E7E7;
 }
 
 .product-info .options {
-    border-bottom: 1px solid #E7E7E7
+    border-bottom: 1px solid #E7E7E7;
 }
 
 .product-info .cart {
-    border-bottom: 1px solid #E7E7E7
+    border-bottom: 1px solid #E7E7E7;
 }
 
 .product-info .review {
@@ -1686,23 +1686,23 @@ a.button:hover {
 /*** Typography ***/
 
 .product-filter .display {
-    color: #333
+    color: #333;
 }
 
 .product-filter .display a {
-    font-weight: bold
+    font-weight: bold;
 }
 
 .product-filter .sort {
-    color: #333
+    color: #333;
 }
 
 .product-filter .limit {
-    color: #333
+    color: #333;
 }
 
 .product-compare {
-    font-weight: bold
+    font-weight: bold;
 }
 
 .product-compare a {
@@ -1717,11 +1717,11 @@ a.button:hover {
 }
 
 .product-list .description {
-    color: #4D4D4D
+    color: #4D4D4D;
 }
 
 .product-list .rating {
-    color: #7B7B7B
+    color: #7B7B7B;
 }
 
 .product-list .price {
@@ -1736,7 +1736,7 @@ a.button:hover {
 }
 
 .product-list .price-new {
-    font-weight: bold
+    font-weight: bold;
 }
 
 .product-list .price-tax {
@@ -1756,7 +1756,7 @@ a.button:hover {
 }
 
 .product-grid .image img {
-    padding: 3px
+    padding: 3px;
 }
 
 .product-grid .name a {
@@ -1776,7 +1776,7 @@ a.button:hover {
 }
 
 .product-grid .price-new {
-    font-weight: bold
+    font-weight: bold;
 }
 
 .product-grid .wishlist a {
@@ -1790,7 +1790,7 @@ a.button:hover {
 }
 
 .product-info .image {
-    text-align: center
+    text-align: center;
 }
 
 .product-info .description {
@@ -1799,7 +1799,7 @@ a.button:hover {
 }
 
 .product-info .description span {
-    color: #38B0E3
+    color: #38B0E3;
 }
 
 .product-info .description a {
@@ -1837,15 +1837,15 @@ a.button:hover {
 }
 
 .product-info .options {
-    color: #000000
+    color: #000000;
 }
 
 .product-info .cart {
-    color: #4D4D4D
+    color: #4D4D4D;
 }
 
 .product-info .cart div > span {
-    color: #999
+    color: #999;
 }
 
 .product-info .cart .minimum {
@@ -1854,23 +1854,23 @@ a.button:hover {
 }
 
 .product-info .review {
-    color: #4D4D4D
+    color: #4D4D4D;
 }
 
 .product-info .review > div {
-    line-height: 20px
+    line-height: 20px;
 }
 
 .product-info .review > div > span {
-    color: #38B0E3
+    color: #38B0E3;
 }
 
 .product-info .review .share {
-    line-height: normal
+    line-height: normal;
 }
 
 .product-info .review .share a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 /** / Typography **/
@@ -1888,11 +1888,11 @@ a.button:hover {
 }
 
 .attribute tr td:first-child {
-    width: 20%
+    width: 20%;
 }
 
 .attribute td {
-    padding: 7px
+    padding: 7px;
 }
 
 .compare-info {
@@ -1914,15 +1914,15 @@ a.button:hover {
 }
 
 .wishlist-product td {
-    padding: 7px
+    padding: 7px;
 }
 
 .wishlist-product tbody td {
-    vertical-align: top
+    vertical-align: top;
 }
 
 .wishlist-product tbody .remove {
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 /** / Layout **/
@@ -1936,7 +1936,7 @@ a.button:hover {
 
 .attribute thead td,
 .attribute thead tr td:first-child {
-    background: #F7F7F7
+    background: #F7F7F7;
 }
 
 .attribute td {
@@ -1951,7 +1951,7 @@ a.button:hover {
 
 .compare-info thead td,
 .compare-info thead tr td:first-child {
-    background: #F7F7F7
+    background: #F7F7F7;
 }
 
 .compare-info td {
@@ -1971,7 +1971,7 @@ a.button:hover {
 }
 
 .wishlist-product tbody td {
-    border-bottom: 1px solid #DDDDDD
+    border-bottom: 1px solid #DDDDDD;
 }
 
 /** / Skin **/
@@ -2018,7 +2018,7 @@ a.button:hover {
 }
 
 .compare-info .name a {
-    font-weight: bold
+    font-weight: bold;
 }
 
 .compare-info .price-old {
@@ -2028,7 +2028,7 @@ a.button:hover {
 }
 
 .compare-info .price-new {
-    font-weight: bold
+    font-weight: bold;
 }
 
 .wishlist-product thead td {
@@ -2039,41 +2039,41 @@ a.button:hover {
 .wishlist-product thead .remove,
 .wishlist-product thead .image,
 .wishlist-product thead .cart {
-    text-align: center
+    text-align: center;
 }
 
 .wishlist-product thead .name,
 .wishlist-product thead .model,
 .wishlist-product thead .stock {
-    text-align: left
+    text-align: left;
 }
 
 .wishlist-product thead .quantity,
 .wishlist-product thead .price,
 .wishlist-product thead .total {
-    text-align: right
+    text-align: right;
 }
 
 .wishlist-product tbody .remove,
 .wishlist-product tbody .image,
 .wishlist-product tbody .cart {
-    text-align: center
+    text-align: center;
 }
 
 .wishlist-product tbody .name,
 .wishlist-product tbody .model,
 .wishlist-product tbody .stock {
-    text-align: left
+    text-align: left;
 }
 
 .wishlist-product tbody .quantity,
 .wishlist-product tbody .price,
 .wishlist-product tbody .total {
-    text-align: right
+    text-align: right;
 }
 
 .wishlist-product tbody .price s {
-    color: #F00
+    color: #F00;
 }
 
 /** / Typography **/
@@ -2085,7 +2085,7 @@ a.button:hover {
 /*** Layout ***/
 
 .order-list {
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .order-list .order-id {
@@ -2122,7 +2122,7 @@ a.button:hover {
 }
 
 .order-detail {
-    background: #EFEFEF
+    background: #EFEFEF;
 }
 
 /** / Skin **/
@@ -2130,15 +2130,15 @@ a.button:hover {
 /*** Typography ***/
 
 .order-list .order-status {
-    text-align: right
+    text-align: right;
 }
 
 .order-list .order-info {
-    text-align: right
+    text-align: right;
 }
 
 .order-detail {
-    font-weight: bold
+    font-weight: bold;
 }
 
 /** / Typography **/
@@ -2166,7 +2166,7 @@ a.button:hover {
 
 .login-content .left .content,
 .login-content .right .content {
-    min-height: 190px
+    min-height: 190px;
 }
 
 /** / Layout **/
@@ -2178,7 +2178,7 @@ a.button:hover {
 /*** Layout ***/
 
 .return-list {
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .return-list .return-id {
@@ -2281,15 +2281,15 @@ a.button:hover {
 /*** Typography ***/
 
 .return-list .return-status {
-    text-align: right
+    text-align: right;
 }
 
 .return-list .return-info {
-    text-align: right
+    text-align: right;
 }
 
 .return-remove {
-    text-align: center
+    text-align: center;
 }
 
 /** / Typography **/
@@ -2301,7 +2301,7 @@ a.button:hover {
 /*** Layout ***/
 
 .download-list {
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .download-list .download-id {
@@ -2335,15 +2335,15 @@ a.button:hover {
 }
 
 .cart-info td {
-    padding: 7px
+    padding: 7px;
 }
 
 .cart-info tbody td {
-    vertical-align: top
+    vertical-align: top;
 }
 
 .cart-info tbody .remove {
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .cart-module .cart-heading {
@@ -2358,7 +2358,7 @@ a.button:hover {
 }
 
 .cart-total table {
-    float: right
+    float: right;
 }
 
 .cart-total td {
@@ -2401,7 +2401,7 @@ a.button:hover {
 }
 
 .cart-total {
-    border-top: 1px solid #DDDDDD
+    border-top: 1px solid #DDDDDD;
 }
 
 /** / Skin **/
@@ -2409,11 +2409,11 @@ a.button:hover {
 /*** Typography ***/
 
 .download-list .download-status {
-    text-align: right
+    text-align: right;
 }
 
 .download-list .download-info {
-    text-align: right
+    text-align: right;
 }
 
 .cart-info thead td {
@@ -2423,34 +2423,34 @@ a.button:hover {
 
 .cart-info thead .remove,
 .cart-info thead .image {
-    text-align: center
+    text-align: center;
 }
 
 .cart-info thead .name,
 .cart-info thead .model {
-    text-align: left
+    text-align: left;
 }
 
 .cart-info thead .quantity,
 .cart-info thead .price,
 .cart-info thead .total {
-    text-align: right
+    text-align: right;
 }
 
 .cart-info tbody .remove,
 .cart-info tbody .image {
-    text-align: center
+    text-align: center;
 }
 
 .cart-info tbody .name,
 .cart-info tbody .model {
-    text-align: left
+    text-align: left;
 }
 
 .cart-info tbody .quantity,
 .cart-info tbody .price,
 .cart-info tbody .total {
-    text-align: right
+    text-align: right;
 }
 
 .cart-info tbody span.stock {
@@ -2515,11 +2515,11 @@ a.button:hover {
 }
 
 .checkout-product td {
-    padding: 7px
+    padding: 7px;
 }
 
 .checkout-product tbody td {
-    vertical-align: top
+    vertical-align: top;
 }
 
 /** / Layout **/
@@ -2543,11 +2543,11 @@ a.button:hover {
 }
 
 .checkout-product tbody td {
-    border-bottom: 1px solid #DDDDDD
+    border-bottom: 1px solid #DDDDDD;
 }
 
 .checkout-product tfoot td {
-    border-bottom: 1px solid #DDDDDD
+    border-bottom: 1px solid #DDDDDD;
 }
 
 /** / Skin **/
@@ -2572,28 +2572,28 @@ a.button:hover {
 
 .checkout-product thead .name,
 .checkout-product thead .model {
-    text-align: left
+    text-align: left;
 }
 
 .checkout-product thead .quantity,
 .checkout-product thead .price,
 .checkout-product thead .total {
-    text-align: right
+    text-align: right;
 }
 
 .checkout-product tbody .name,
 .checkout-product tbody .model {
-    text-align: left
+    text-align: left;
 }
 
 .checkout-product tbody .quantity,
 .checkout-product tbody .price,
 .checkout-product tbody .total {
-    text-align: right
+    text-align: right;
 }
 
 .checkout-product tfoot td {
-    text-align: right
+    text-align: right;
 }
 
 /** / Typography **/
@@ -2605,7 +2605,7 @@ a.button:hover {
 /*** Layout ***/
 
 .contact-info {
-    overflow: auto
+    overflow: auto;
 }
 
 .contact-info .left {
@@ -2658,7 +2658,7 @@ a.button:hover {
 }
 
 #footer .column ul li {
-    margin-bottom: 3px
+    margin-bottom: 3px;
 }
 
 #powered {
@@ -2704,11 +2704,11 @@ a.button:hover {
 /*** Layout ***/
 
 .banner div {
-    width: 100%
+    width: 100%;
 }
 
 .banner div img {
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 /** / Layout **/
@@ -2716,7 +2716,7 @@ a.button:hover {
 /*** Typography ***/
 
 .banner div {
-    text-align: center
+    text-align: center;
 }
 
 /** / Typography **/
