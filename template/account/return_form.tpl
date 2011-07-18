@@ -1,13 +1,13 @@
 <?php echo $header; ?>
 <?php echo $column_left; ?>
 <?php echo $column_right; ?>
-<div id="content">
+<section id="content">
 	<?php echo $content_top; ?>
-  	<div class="breadcrumb">
+  	<section class="breadcrumb">
     	<?php foreach ($breadcrumbs as $breadcrumb) { ?>
     		<?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     	<?php } ?>
-  	</div>
+  	</section>
   	<h1><?php echo $heading_title; ?></h1>
   	<?php if ($error_warning) { ?>
   		<div class="warning"><?php echo $error_warning; ?></div>
@@ -15,7 +15,7 @@
   	<?php echo $text_description; ?>
   	<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="return">
     	<h2><?php echo $text_order; ?></h2>
-    	<div class="content">
+    	<section class="content">
       		<div class="left">
 				<span class="required">*</span> 
 				<?php echo $entry_firstname; ?>
@@ -68,14 +68,14 @@
         		<input type="text" name="date_ordered" value="<?php echo $date_ordered; ?>" class="large-field date" />
         		<br />
       		</div>
-    	</div>
+    	</section>
     	<h2><?php echo $text_product; ?></h2>
-    	<div id="return-product">
+    	<section id="return-product">
       		<?php $return_product_row = 0; ?>
       		<?php foreach ($return_products as $return_product) { ?>
-      			<div id="return-product-row<?php echo $return_product_row; ?>">
-        			<div class="content">
-          				<div class="return-product">
+      			<article id="return-product-row<?php echo $return_product_row; ?>">
+        			<section class="content">
+          				<section class="return-product">
             				<div class="return-name">
 								<span class="required">*</span> 
 								<b><?php echo $entry_product; ?></b>
@@ -101,8 +101,8 @@
 								<br />
               					<input type="text" name="return_product[<?php echo $return_product_row; ?>][quantity]" value="<?php echo $return_product['quantity']; ?>" />
             				</div>
-          				</div>
-          				<div class="return-detail">
+          				</section>
+          				<section class="return-detail">
             				<div class="return-reason">
 								<span class="required">*</span> 
 								<b><?php echo $entry_reason; ?></b>
@@ -164,19 +164,19 @@
             				<div class="return-remove">
 								<a onclick="$('#return-product-row<?php echo $return_product_row; ?>').remove();" class="button"><?php echo $button_remove; ?></a>
 							</div>
-          				</div>
-        			</div>
-      			</div>
+          				</section>
+        			</section>
+      			</article>
       			<?php $return_product_row++; ?>
       		<?php } ?>
-    	</div>
+    	</section>
     	<div class="buttons">
       		<div class="right">
 				<a onclick="addReturnProduct();" class="button"><?php echo $button_add_product; ?></a>
 			</div>
     	</div>
     	<h2><?php echo $text_additional; ?></h2>
-    	<div class="return-additional">
+    	<section class="return-additional">
       		<div class="return-comment">
         		<textarea name="comment" cols="50" rows="6"><?php echo $comment; ?></textarea>
       		</div>
@@ -190,7 +190,7 @@
         			<span class="error"><?php echo $error_captcha; ?></span>
         		<?php } ?>
       		</div>
-    	</div>
+    	</section>
     	<div class="buttons">
       		<div class="left">
 				<a href="<?php echo $back; ?>" class="button"><?php echo $button_back; ?></a>
@@ -201,7 +201,7 @@
     	</div>
   	</form>
   	<?php echo $content_bottom; ?>
-</div>
+</section>
 <script type="text/javascript"><!--
 var return_product_row = <?php echo $return_product_row; ?>;
 
