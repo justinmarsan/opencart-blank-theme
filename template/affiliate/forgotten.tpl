@@ -18,7 +18,9 @@
     	<section class="content">
       		<table class="form">
         		<tr>
-          			<td><?php echo $entry_email; ?></td>
+          			<td>
+						<label for="email"><?php echo $entry_email; ?></label>
+					</td>
           			<td><input type="text" name="email" value="" /></td>
         		</tr>
       		</table>
