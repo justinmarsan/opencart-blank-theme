@@ -2,15 +2,21 @@
 <div id="payment">
   	<table class="form">
     	<tr>
-      		<td><?php echo $entry_cc_owner; ?></td>
+      		<td>
+      			<label for="cc_owner"><?php echo $entry_cc_owner; ?></label>
+      		</td>
       		<td><input type="text" name="cc_owner" value="" /></td>
     	</tr>
     	<tr>
-      		<td><?php echo $entry_cc_number; ?></td>
+      		<td>
+      			<label for="cc_number"><?php echo $entry_cc_number; ?></label>
+      		</td>
       		<td><input type="text" name="cc_number" value="" /></td>
     	</tr>
     	<tr>
-      		<td><?php echo $entry_cc_expire_date; ?></td>
+      		<td>
+      			<label for="cc_expire_date_month"><?php echo $entry_cc_expire_date; ?></label>
+      		</td>
       		<td>
 				<select name="cc_expire_date_month">
           			<?php foreach ($months as $month) { ?>
@@ -26,7 +32,9 @@
 			</td>
     	</tr>
     	<tr>
-      		<td><?php echo $entry_cc_cvv2; ?></td>
+      		<td>
+      			<label for="cc_cvv2"><?php echo $entry_cc_cvv2; ?></label>
+      		</td>
       		<td><input type="text" name="cc_cvv2" value="" size="3" /></td>
     	</tr>
   	</table>
