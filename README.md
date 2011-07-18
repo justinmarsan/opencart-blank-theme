@@ -46,3 +46,4 @@ Labels Added in :
 - template/account/*
 - template/affiliate/*
 - template/checkout/*
+- template/information/*
