@@ -29,12 +29,16 @@
         		<h2><?php echo $text_returning_affiliate; ?></h2>
         		<section class="content">
           			<p><?php echo $text_i_am_returning_affiliate; ?></p>
-          			<b><?php echo $entry_email; ?></b>
+          			<label for="email">
+          				<b><?php echo $entry_email; ?></b>
+          			</label>
 					<br />
           			<input type="text" name="email" value="" />
           			<br />
           			<br />
-          			<b><?php echo $entry_password; ?></b>
+          			<label for="password">
+          				<b><?php echo $entry_password; ?></b>
+          			</label>
 					<br />
           			<input type="password" name="password" value="" />
           			<br />
