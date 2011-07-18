@@ -35,3 +35,4 @@ HTML5 Tags in :
 - template/checkout/*
 - template/error/*
 - template/information/*
+- template/module/*

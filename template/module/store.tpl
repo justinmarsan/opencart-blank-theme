@@ -1,6 +1,6 @@
 <div class="box">
   	<div class="box-heading"><?php echo $heading_title; ?></div>
-  	<div class="box-content" style="text-align: center;">
+  	<section class="box-content" style="text-align: center;">
     	<p><?php echo $text_store; ?></p>
     	<select name="store" onchange="location = this.value">
       		<?php foreach ($stores as $store) { ?>
@@ -13,5 +13,5 @@
     	</select>
     	<br />
     	<br />
-  	</div>
+  	</section>
 </div>

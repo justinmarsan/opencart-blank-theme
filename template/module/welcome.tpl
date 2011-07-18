@@ -1,4 +1,4 @@
-<div class="welcome">
+<section class="welcome">
 	<?php echo $heading_title; ?>
-</div>
+</section>
 <?php echo $message; ?>
