@@ -33,3 +33,4 @@ HTML5 Tags in :
 - template/account/*
 - template/affiliate/*
 - template/checkout/*
+- template/error/*
