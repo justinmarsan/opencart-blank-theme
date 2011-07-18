@@ -1,4 +1,4 @@
-<div class="checkout-product">
+<section class="checkout-product">
   	<table>
     	<thead>
       		<tr>
@@ -45,5 +45,5 @@
    			<?php } ?>
    		</tfoot>
 	</table>
-</div>
-<div class="payment"><?php echo $payment; ?></div>
+</section>
+<section class="payment"><?php echo $payment; ?></section>
