@@ -11,17 +11,17 @@
   	<h1><?php echo $heading_title; ?></h1>
   	<p><?php echo $text_description; ?></p>
   	<p>
-		<label for="code"><?php echo $text_code; ?></label>
+		<?php echo $text_code; ?>
 		<br />
-    	<textarea name="code" cols="40" rows="5"><?php echo $code; ?></textarea>
+    	<textarea cols="40" rows="5"><?php echo $code; ?></textarea>
   	</p>
   	<p>
-		<label for="product"><?php echo $text_generator; ?></label>
+		<?php echo $text_generator; ?>
 		<br />
     	<input type="text" name="product" value="" />
   	</p>
   	<p>
-		<label for="link"><?php echo $text_link; ?></label>
+		<?php echo $text_link; ?>
 		<br />
     	<textarea name="link" cols="40" rows="5"></textarea>
   	</p>
