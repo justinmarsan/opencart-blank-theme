@@ -1,9 +1,9 @@
 <div class="box">
   	<div class="box-heading"><?php echo $heading_title; ?></div>
-  	<div class="box-content">
+  	<section class="box-content">
     	<div class="box-product">
       		<?php foreach ($products as $product) { ?>
-      			<div>
+      			<article>
         			<?php if ($product['thumb']) { ?>
         				<div class="image">
 							<a href="<?php echo $product['href']; ?>">
@@ -30,8 +30,8 @@
         			<div class="cart">
 						<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><?php echo $button_cart; ?></a>
 					</div>
-      			</div>
+      			</article>
       		<?php } ?>
     	</div>
-  	</div>
+  	</section>
 </div>

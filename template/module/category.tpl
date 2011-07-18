@@ -1,6 +1,6 @@
 <div class="box">
   	<div class="box-heading"><?php echo $heading_title; ?></div>
-  	<div class="box-content">
+  	<section class="box-content">
     	<div class="box-category">
       		<ul>
         		<?php foreach ($categories as $category) { ?>
@@ -27,5 +27,5 @@
         		<?php } ?>
       		</ul>
     	</div>
-  	</div>
+  	</section>
 </div>

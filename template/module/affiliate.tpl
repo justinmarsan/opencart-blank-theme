@@ -1,6 +1,6 @@
 <div class="box">
   	<div class="box-heading"><?php echo $heading_title; ?></div>
-  	<div class="box-content">
+  	<section class="box-content">
     	<ul>
       		<?php if (!$logged) { ?>
       			<li>
@@ -21,5 +21,5 @@
       			<li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
       		<?php } ?>
     	</ul>
-  	</div>
+  	</section>
 </div>
