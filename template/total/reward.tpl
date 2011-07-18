@@ -1,7 +1,7 @@
 <div>
   	<div class="cart-heading"><?php echo $heading_title; ?></div>
   	<section class="cart-content" id="reward">
-		<?php echo $entry_reward; ?>
+		<label for="reward"><?php echo $entry_reward; ?></label>
 		&nbsp;
   		<input type="text" name="reward" value="<?php echo $reward; ?>" />
   		&nbsp;
