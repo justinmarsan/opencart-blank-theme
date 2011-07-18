@@ -682,9 +682,10 @@ a:hover {
     color: #555555;
 }
 
-.required {
+.required:before {
     /*color: #FF0000;*/
-    font-weight: bold;
+    content:"*";
+	font-weight: bold;
 }
 
 .error {
