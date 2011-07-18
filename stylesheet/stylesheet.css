@@ -108,26 +108,24 @@ a {
 
 h1,
 .welcome {
-    color: #636E75;
-    font: Verdana;
     font-size: 32px;
     font-weight: normal;
 }
 
 h2 {
-    color: #000000;
     font-size: 16px;
 }
 
 a,
 a:visited,
 a b {
-    color: #38B0E3;
+    color: red;
     text-decoration: underline;
 }
 
 a:hover {
-    text-decoration: none;
+    color: blue;
+	text-decoration: none;
 }
 
 /** / Typography **/
@@ -438,38 +436,32 @@ a:hover {
 /*** Typography ***/
 
 #language {
-    color: #999;
     line-height: 17px;
 }
 
 #currency {
-    color: #999;
     line-height: 17px;
 }
 
 #currency a {
-    color: #999;
     text-decoration: none;
 }
 
 #currency a b {
-    color: #000;
     text-decoration: none;
 }
 
 #header #cart .heading h4 {
-    color: #333333;
     font-size: 15px;
     font-weight: bold;
 }
 
 #header #cart .heading a {
-    color: #38B0E3;
     text-decoration: none;
 }
 
 #header #cart .cart td {
-    color: #000;
+    /*color: #000;*/
 }
 
 #header #cart .cart .image img {
@@ -477,19 +469,18 @@ a:hover {
 }
 
 #header #cart .cart .name small {
-    color: #666;
+    /*color: #666;*/
 }
 
 #header #cart table.total td {
-    color: #000;
+    /*color: #000;*/
 }
 
 #header #welcome {
-    color: #999999;
+    /*color: #999999;*/
 }
 
 #header .links a {
-    color: #38B0E3;
     text-decoration: none;
     font-size: 12px;
 }
@@ -596,18 +587,16 @@ a:hover {
 
 #menu > ul > li > a {
     font-size: 13px;
-    color: #FFF;
     line-height: 14px;
     text-decoration: none;
 }
 
 #menu > ul > li ul > li > a {
     text-decoration: none;
-    color: #FFFFFF;
 }
 
 #menu > ul > li > div > ul > li > a {
-    color: #FFFFFF;
+    /*color: #FFFFFF;*/
 }
 
 /** / Typography **/
@@ -683,7 +672,7 @@ a:hover {
 /*** Typography ***/
 
 .breadcrumb {
-    color: #CCCCCC;
+    /*color: #CCCCCC;*/
 }
 
 .success,
@@ -694,19 +683,17 @@ a:hover {
 }
 
 .required {
-    color: #FF0000;
+    /*color: #FF0000;*/
     font-weight: bold;
 }
 
 .error {
-    color: #FF0000;
+    /*color: #FF0000;*/
 }
 
 .help {
-    color: #999;
     font-size: 10px;
     font-weight: normal;
-    font-family: Verdana, Geneva, sans-serif;
 }
 
 /** / Typography **/
@@ -793,13 +780,12 @@ table.list .desc {
 /*** Typography ***/
 
 table.form > * > * > td {
-    color: #000000;
+    /*color: #000000;*/
 }
 
 table.list thead td a,
 .list thead td {
     text-decoration: none;
-    color: #222222;
     font-weight: bold;
 }
 
@@ -876,13 +862,11 @@ table.list .center {
 
 .pagination .links a {
     text-decoration: none;
-    color: #A3A3A3;
 }
 
 .pagination .links b {
     font-weight: normal;
     text-decoration: none;
-    color: #269BC6;
 }
 
 /** / Typography **/
@@ -935,7 +919,8 @@ a.button:hover {
 }
 
 .buttons {
-    border: 1px solid #EEEEEE
+    border: 1px solid #EEEEEE;
+    background: #FFFFFF;
 }
 
 /** / Skin **/
@@ -943,19 +928,15 @@ a.button:hover {
 /*** Typography ***/
 
 a.button {
-    text-decoration: none;
-    color: #FFFFFF;
+    color: white;
+	text-decoration: none;
     line-height: 12px;
     font-size: 12px;
     font-weight: bold;
 }
 
 a.button:hover {
-    color: #FFFFFF;
-}
-
-.buttons {
-    background: #FFFFFF;
+    /*color: #FFFFFF;*/
 }
 
 .buttons .left {
@@ -1033,12 +1014,10 @@ a.button:hover {
 }
 
 .htabs a {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: #000000;
 }
 
 /** / Typography **/
@@ -1090,11 +1069,9 @@ a.button:hover {
 /*** Typography ***/
 
 .box .box-heading {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: bold;
     line-height: 14px;
-    color: #333;
 }
 
 /** / Typography **/
@@ -1156,18 +1133,15 @@ a.button:hover {
 /*** Typography ***/
 
 .box-product .name a {
-    color: #38B0E3;
     font-weight: bold;
     text-decoration: none;
 }
 
 .box-product .price {
     font-weight: bold;
-    color: #333333;
 }
 
 .box-product .price-old {
-    color: #F00;
     text-decoration: line-through;
 }
 
@@ -1231,7 +1205,6 @@ a.button:hover {
 
 .box-category > ul > li > a {
     text-decoration: none;
-    color: #333;
 }
 
 .box-category > ul > li a.active {
@@ -1686,7 +1659,7 @@ a.button:hover {
 /*** Typography ***/
 
 .product-filter .display {
-    color: #333;
+    /*color: #333;*/
 }
 
 .product-filter .display a {
@@ -1694,11 +1667,11 @@ a.button:hover {
 }
 
 .product-filter .sort {
-    color: #333;
+    /*color: #333;*/
 }
 
 .product-filter .limit {
-    color: #333;
+    /*color: #333;*/
 }
 
 .product-compare {
@@ -1711,27 +1684,24 @@ a.button:hover {
 }
 
 .product-list .name a {
-    color: #38B0E3;
     font-weight: bold;
     text-decoration: none;
 }
 
 .product-list .description {
-    color: #4D4D4D;
+    /*color: #4D4D4D;*/
 }
 
 .product-list .rating {
-    color: #7B7B7B;
+    /*color: #7B7B7B;*/
 }
 
 .product-list .price {
     text-align: right;
-    color: #333333;
     font-size: 12px;
 }
 
 .product-list .price-old {
-    color: #F00;
     text-decoration: line-through;
 }
 
@@ -1742,36 +1712,26 @@ a.button:hover {
 .product-list .price-tax {
     font-size: 12px;
     font-weight: normal;
-    color: #BBBBBB;
 }
 
 .product-list .wishlist a {
-    color: #333333;
     text-decoration: none;
 }
 
 .product-list .compare a {
-    color: #333333;
     text-decoration: none;
 }
 
-.product-grid .image img {
-    padding: 3px;
-}
-
 .product-grid .name a {
-    color: #38B0E3;
     font-weight: bold;
     text-decoration: none;
 }
 
 .product-grid .price {
     font-weight: bold;
-    color: #333333;
 }
 
 .product-grid .price-old {
-    color: #F00;
     text-decoration: line-through;
 }
 
@@ -1780,12 +1740,10 @@ a.button:hover {
 }
 
 .product-grid .wishlist a {
-    color: #333333;
     text-decoration: none;
 }
 
 .product-grid .compare a {
-    color: #333333;
     text-decoration: none;
 }
 
@@ -1795,66 +1753,58 @@ a.button:hover {
 
 .product-info .description {
     line-height: 20px;
-    color: #4D4D4D;
 }
 
 .product-info .description span {
-    color: #38B0E3;
+    /*color: #38B0E3;*/
 }
 
 .product-info .description a {
-    color: #4D4D4D;
     text-decoration: none;
 }
 
 .product-info .price {
     font-size: 15px;
     font-weight: bold;
-    color: #333333;
 }
 
 .product-info .price-old {
-    color: #F00;
     text-decoration: line-through;
 }
 
 .product-info .price-tax {
     font-size: 12px;
     font-weight: normal;
-    color: #999;
 }
 
 .product-info .price .reward {
     font-size: 12px;
     font-weight: normal;
-    color: #999;
 }
 
 .product-info .price .discount {
     font-weight: normal;
     font-size: 12px;
-    color: #4D4D4D;
 }
 
 .product-info .options {
-    color: #000000;
+    /*color: #000000;*/
 }
 
 .product-info .cart {
-    color: #4D4D4D;
+    /*color: #4D4D4D;*/
 }
 
 .product-info .cart div > span {
-    color: #999;
+    /*color: #999;*/
 }
 
 .product-info .cart .minimum {
     font-size: 11px;
-    color: #999;
 }
 
 .product-info .review {
-    color: #4D4D4D;
+    /*color: #4D4D4D;*/
 }
 
 .product-info .review > div {
@@ -1862,7 +1812,7 @@ a.button:hover {
 }
 
 .product-info .review > div > span {
-    color: #38B0E3;
+    /*color: #38B0E3;*/
 }
 
 .product-info .review .share {
@@ -1980,40 +1930,34 @@ a.button:hover {
 
 .attribute thead td,
 .attribute thead tr td:first-child {
-    color: #000000;
     font-size: 14px;
     font-weight: bold;
     text-align: left;
 }
 
 .attribute tr td:first-child {
-    color: #000000;
     font-weight: bold;
     text-align: right;
 }
 
 .attribute td {
-    color: #4D4D4D;
     text-align: center;
     vertical-align: top;
 }
 
 .compare-info thead td,
 .compare-info thead tr td:first-child {
-    color: #000000;
     font-size: 14px;
     font-weight: bold;
     text-align: left;
 }
 
 .compare-info tr td:first-child {
-    color: #000000;
     font-weight: bold;
     text-align: right;
 }
 
 .compare-info td {
-    color: #4D4D4D;
     text-align: center;
 }
 
@@ -2023,7 +1967,6 @@ a.button:hover {
 
 .compare-info .price-old {
     font-weight: bold;
-    color: #F00;
     text-decoration: line-through;
 }
 
@@ -2032,7 +1975,6 @@ a.button:hover {
 }
 
 .wishlist-product thead td {
-    color: #4D4D4D;
     font-weight: bold;
 }
 
@@ -2073,7 +2015,7 @@ a.button:hover {
 }
 
 .wishlist-product tbody .price s {
-    color: #F00;
+    /*color: #F00;*/
 }
 
 /** / Typography **/
@@ -2417,7 +2359,6 @@ a.button:hover {
 }
 
 .cart-info thead td {
-    color: #4D4D4D;
     font-weight: bold;
 }
 
@@ -2454,14 +2395,12 @@ a.button:hover {
 }
 
 .cart-info tbody span.stock {
-    color: #F00;
     font-weight: bold;
 }
 
 .cart-module .cart-heading {
     font-weight: bold;
     font-size: 13px;
-    color: #555555;
 }
 
 .cart-total {
@@ -2557,7 +2496,6 @@ a.button:hover {
 .checkout-heading {
     font-weight: bold;
     font-size: 13px;
-    color: #555555;
 }
 
 .checkout-heading a {
@@ -2566,7 +2504,6 @@ a.button:hover {
 }
 
 .checkout-product thead td {
-    color: #4D4D4D;
     font-weight: bold;
 }
 
@@ -2682,13 +2619,11 @@ a.button:hover {
 /*** Typography ***/
 
 #footer h3 {
-    color: #000000;
     font-size: 14px;
 }
 
 #footer .column a {
     text-decoration: none;
-    color: #000;
 }
 
 #footer .column a:hover {
