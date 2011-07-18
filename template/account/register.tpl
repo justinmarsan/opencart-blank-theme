@@ -19,8 +19,7 @@
       		<table class="form">
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_firstname; ?>
+						<label for="firstname" class="required"><?php echo $entry_firstname; ?></label>
 					</td>
           			<td>
 						<input type="text" name="firstname" value="<?php echo $firstname; ?>" />
@@ -31,8 +30,7 @@
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_lastname; ?>
+						<label for="lastname" class="required"><?php echo $entry_lastname; ?></label>
 					</td>
           			<td>
 						<input type="text" name="lastname" value="<?php echo $lastname; ?>" />
@@ -43,8 +41,7 @@
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_email; ?>
+						<label for="email" class="required"><?php echo $entry_email; ?></label>
 					</td>
           			<td>
 						<input type="text" name="email" value="<?php echo $email; ?>" />
@@ -54,7 +51,9 @@
 					</td>
         		</tr>
         		<tr>
-          			<td><span class="required">*</span> <?php echo $entry_telephone; ?></td>
+          			<td>
+						<label for="telephone" class="required"><?php echo $entry_telephone; ?></label>
+					</td>
           			<td>
 						<input type="text" name="telephone" value="<?php echo $telephone; ?>" />
             			<?php if ($error_telephone) { ?>
@@ -63,7 +62,9 @@
 					</td>
         		</tr>
         		<tr>
-          			<td><?php echo $entry_fax; ?></td>
+          			<td>
+						<label for="fax"><?php echo $entry_fax; ?></label>
+					</td>
           			<td><input type="text" name="fax" value="<?php echo $fax; ?>" /></td>
         		</tr>
       		</table>
@@ -72,11 +73,15 @@
     	<section class="content">
       		<table class="form">
         		<tr>
-          			<td><?php echo $entry_company; ?></td>
+          			<td>
+						<label for="company"><?php echo $entry_company; ?></label>
+					</td>
           			<td><input type="text" name="company" value="<?php echo $company; ?>" /></td>
         		</tr>
         		<tr>
-          			<td><span class="required">*</span> <?php echo $entry_address_1; ?></td>
+          			<td>
+						<label for="address_1" class="required"><?php echo $entry_address_1; ?></label>
+					</td>
           			<td>
 						<input type="text" name="address_1" value="<?php echo $address_1; ?>" />
             			<?php if ($error_address_1) { ?>
@@ -85,11 +90,15 @@
 					</td>
        			</tr>
        			<tr>
-       				<td><?php echo $entry_address_2; ?></td>
+       				<td>
+						<label for="address_2"><?php echo $entry_address_2; ?></label>
+					</td>
        				<td><input type="text" name="address_2" value="<?php echo $address_2; ?>" /></td>
        			</tr>
        			<tr>
-       				<td><span class="required">*</span> <?php echo $entry_city; ?></td>
+       				<td>
+						<label for="city" class="required"><?php echo $entry_city; ?></label>
+					</td>
        				<td>
 						<input type="text" name="city" value="<?php echo $city; ?>" />
            				<?php if ($error_city) { ?>
@@ -98,7 +107,9 @@
 					</td>
        			</tr>
        			<tr>
-       				<td><span class="required">*</span> <?php echo $entry_postcode; ?></td>
+       				<td>
+						<label for="postcode" class="required"><?php echo $entry_postcode; ?></label>
+					</td>
        				<td>
 						<input type="text" name="postcode" value="<?php echo $postcode; ?>" />
            				<?php if ($error_postcode) { ?>
@@ -107,7 +118,9 @@
 					</td>
        			</tr>
       			<tr>
-       				<td><span class="required">*</span> <?php echo $entry_country; ?></td>
+       				<td>
+						<label for="country_id" class="required"><?php echo $entry_country; ?></label>
+					</td>
        				<td>
 						<select name="country_id" onchange="$('select[name=\'zone_id\']').load('index.php?route=account/register/zone&country_id=' + this.value + '&zone_id=<?php echo $zone_id; ?>');">
            					<option value=""><?php echo $text_select; ?></option>
@@ -126,8 +139,7 @@
        			</tr>
        			<tr>
        				<td>
-						<span class="required">*</span> 
-						<?php echo $entry_zone; ?>
+						<label for="zone_id" class="required"><?php echo $entry_zone; ?></label>
 					</td>
        				<td>
 						<select name="zone_id"></select>
@@ -143,8 +155,7 @@
    			<table class="form">
        			<tr>
        				<td>
-						<span class="required">*</span> 
-						<?php echo $entry_password; ?>
+						<label for="password" class="required"><?php echo $entry_password; ?></label>
 					</td>
        				<td>
 						<input type="password" name="password" value="<?php echo $password; ?>" />
@@ -155,8 +166,7 @@
        			</tr>
        			<tr>
        				<td>
-						<span class="required">*</span> 
-						<?php echo $entry_confirm; ?>
+						<label for="confirm" class="required"><?php echo $entry_confirm; ?></label>
 					</td>
        				<td>
 						<input type="password" name="confirm" value="<?php echo $confirm; ?>" />
@@ -171,7 +181,9 @@
    		<section class="content">
    			<table class="form">
        			<tr>
-       				<td><?php echo $entry_newsletter; ?></td>
+       				<td>
+						<label for="newsletter"><?php echo $entry_newsletter; ?></label>
+					</td>
        				<td>
 						<?php if ($newsletter == 1) { ?>
            					<input type="radio" name="newsletter" value="1" checked="checked" />
@@ -191,7 +203,7 @@
    		<?php if ($text_agree) { ?>
    			<div class="buttons">
      				<div class="right">
-					<?php echo $text_agree; ?>
+					<label for="agree"><?php echo $text_agree; ?></label>
        				<?php if ($agree) { ?>
        					<input type="checkbox" name="agree" value="1" checked="checked" />
        				<?php } else { ?>
