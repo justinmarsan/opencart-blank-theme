@@ -21,8 +21,7 @@
       		<table class="form">
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_firstname; ?>
+						<label for="firstname" class="required"><?php echo $entry_firstname; ?></label>
 					</td>
           			<td>
 						<input type="text" name="firstname" value="<?php echo $firstname; ?>" />
@@ -33,8 +32,7 @@
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_lastname; ?>
+						<label for="lastname" class="required"><?php echo $entry_lastname; ?></label>
 					</td>
           			<td>
 						<input type="text" name="lastname" value="<?php echo $lastname; ?>" />
@@ -44,7 +42,9 @@
 					</td>
         		</tr>
         		<tr>
-          			<td><span class="required">*</span> <?php echo $entry_email; ?></td>
+          			<td>
+						<label for="email" class="required"><?php echo $entry_email; ?></label>
+					</td>
           			<td>
 						<input type="text" name="email" value="<?php echo $email; ?>" />
             			<?php if ($error_email) { ?>
@@ -53,7 +53,9 @@
 					</td>
         		</tr>
         		<tr>
-          			<td><span class="required">*</span> <?php echo $entry_telephone; ?></td>
+          			<td>
+						<label for="telephone" class="required"><?php echo $entry_telephone; ?></label>
+					</td>
           			<td>
 						<input type="text" name="telephone" value="<?php echo $telephone; ?>" />
             			<?php if ($error_telephone) { ?>
@@ -62,7 +64,9 @@
 					</td>
         		</tr>
         		<tr>
-          			<td><?php echo $entry_fax; ?></td>
+          			<td>
+						<label for="fax"><?php echo $entry_fax; ?></label>
+					</td>
           			<td><input type="text" name="fax" value="<?php echo $fax; ?>" /></td>
         		</tr>
       		</table>
