@@ -6,6 +6,24 @@ What is the point of it ?
 
 This blank theme is created to make theming for opencart easier for frontend developers and designers. It makes the code easier to read with indentation (and tabs god dammit) and re-aranges the css to be easier to override it.
 
+Installation
+------------
+
+Copy paste the opencart-blank-theme in "catalog/view/theme/" in your installation of Opencart.
+
+Log in your admin panel.
+
+Go into Settings and select the store you want to apply the theme to.
+
+In the "Store" tab, change the theme to "opencart-blank-theme"
+
+If you want to change the theme name
+------------------------------------
+
+If you decide to change the name of your theme folder, make sure to update the paths :
+
+- line 31, path to the stylesheet.css in template/common/header.tpl
+
 What have been done so far
 ==========================
 
