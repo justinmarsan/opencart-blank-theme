@@ -17,8 +17,7 @@
     	<h2><?php echo $text_order; ?></h2>
     	<section class="content">
       		<div class="left">
-				<span class="required">*</span> 
-				<?php echo $entry_firstname; ?>
+				<label for="firstname" class="required"><?php echo $entry_firstname; ?></label>
 				<br />
         		<input type="text" name="firstname" value="<?php echo $firstname; ?>" class="large-field" />
         		<br />
@@ -26,8 +25,7 @@
         			<span class="error"><?php echo $error_firstname; ?></span>
         		<?php } ?>
         		<br />
-        		<span class="required">*</span> 
-				<?php echo $entry_lastname; ?>
+        		<label for="lastname" class="required"><?php echo $entry_lastname; ?></label>
 				<br />
         		<input type="text" name="lastname" value="<?php echo $lastname; ?>" class="large-field" />
         		<br />
@@ -35,8 +33,7 @@
         			<span class="error"><?php echo $error_lastname; ?></span>
         		<?php } ?>
         		<br />
-        		<span class="required">*</span> 
-				<?php echo $entry_email; ?>
+        		<label for="email" class="required"><?php echo $entry_email; ?></label>
 				<br />
         		<input type="text" name="email" value="<?php echo $email; ?>" class="large-field" />
         		<br />
@@ -44,8 +41,7 @@
         			<span class="error"><?php echo $error_email; ?></span>
         		<?php } ?>
         		<br />
-        		<span class="required">*</span> 
-				<?php echo $entry_telephone; ?>
+        		<label for="telephone" class="required"><?php echo $entry_telephone; ?></label>
 				<br />
         		<input type="text" name="telephone" value="<?php echo $telephone; ?>" class="large-field" />
         		<br />
@@ -55,8 +51,7 @@
         		<br />
       		</div>
       		<div class="right">
-				<span class="required">*</span> 
-				<?php echo $entry_order_id; ?>
+				<label for="order_id" class="required"><?php echo $entry_order_id; ?></label>
 				<br />
         		<input type="text" name="order_id" value="<?php echo $order_id; ?>" class="large-field" />
         		<br />
@@ -64,7 +59,8 @@
         			<span class="error"><?php echo $error_order_id; ?></span>
         		<?php } ?>
         		<br />
-        		<?php echo $entry_date_ordered; ?><br />
+        		<label for="date_ordered"><?php echo $entry_date_ordered; ?></label>
+				<br />
         		<input type="text" name="date_ordered" value="<?php echo $date_ordered; ?>" class="large-field date" />
         		<br />
       		</div>
@@ -77,8 +73,9 @@
         			<section class="content">
           				<section class="return-product">
             				<div class="return-name">
-								<span class="required">*</span> 
-								<b><?php echo $entry_product; ?></b>
+								<label for="return_product[<?php echo $return_product_row; ?>][name]" class="required">
+									<b><?php echo $entry_product; ?></b>
+								</label>
 								<br />
               					<input type="text" name="return_product[<?php echo $return_product_row; ?>][name]" value="<?php echo $return_product['name']; ?>" />
               					<br />
@@ -87,8 +84,9 @@
               					<?php } ?>
             				</div>
             				<div class="return-model">
-								<span class="required">*</span> 
-								<b><?php echo $entry_model; ?></b>
+								<label for="return_product[<?php echo $return_product_row; ?>][model]" class="required">
+									<b><?php echo $entry_model; ?></b>
+								</label>
 								<br />
               					<input type="text" name="return_product[<?php echo $return_product_row; ?>][model]" value="<?php echo $return_product['model']; ?>" />
               					<br />
@@ -97,15 +95,18 @@
               					<?php } ?>
             				</div>
             				<div class="return-quantity">
-								<b><?php echo $entry_quantity; ?></b>
+								<label for="return_product[<?php echo $return_product_row; ?>][quantity]">
+									<b><?php echo $entry_quantity; ?></b>
+								</label>
 								<br />
               					<input type="text" name="return_product[<?php echo $return_product_row; ?>][quantity]" value="<?php echo $return_product['quantity']; ?>" />
             				</div>
           				</section>
           				<section class="return-detail">
             				<div class="return-reason">
-								<span class="required">*</span> 
-								<b><?php echo $entry_reason; ?></b>
+								<span class="required">
+									<b><?php echo $entry_reason; ?></b>
+								</span>
 								<br />
               					<table>
                 					<?php foreach ($return_reasons as $return_reason) { ?>
@@ -139,7 +140,9 @@
               					<?php } ?>
             				</div>
             				<div class="return-opened">
-								<b><?php echo $entry_opened; ?></b>
+								<label for="return_product[<?php echo $return_product_row; ?>][opened]">
+									<b><?php echo $entry_opened; ?></b>
+								</label>
 								<br />
               					<?php if ($return_product['opened']) { ?>
               						<input type="radio" name="return_product[<?php echo $return_product_row; ?>][opened]" value="1" id="opened<?php echo $return_product_row; ?>" checked="checked" />
@@ -155,7 +158,9 @@
               					<label for="unopened<?php echo $return_product_row; ?>"><?php echo $text_no; ?></label>
               					<br />
               					<br />
-              					<?php echo $entry_fault_detail; ?>
+              					<label for="return_product[<?php echo $return_product_row; ?>][comment]">
+									<?php echo $entry_fault_detail; ?>
+								</label>
 								<br />
               					<textarea name="return_product[<?php echo $return_product_row; ?>][comment]" cols="45" rows="6">
 									<?php echo $return_product['comment']; ?>
@@ -181,7 +186,9 @@
         		<textarea name="comment" cols="50" rows="6"><?php echo $comment; ?></textarea>
       		</div>
       		<div class="return-captcha">
-				<b><?php echo $entry_captcha; ?></b>
+				<label for="captcha" class="required">
+					<b><?php echo $entry_captcha; ?></b>
+				</label>
 				<br />
         		<input type="text" name="captcha" value="<?php echo $captcha; ?>" />
         		<br />
