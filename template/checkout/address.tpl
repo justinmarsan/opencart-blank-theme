@@ -33,42 +33,49 @@
   	<table class="form">
     	<tr>
       		<td>
-				<span class="required">*</span> 
-				<?php echo $entry_firstname; ?>
+				<label for="firstname" class="required"><?php echo $entry_firstname; ?></label>
 			</td>
       		<td><input type="text" name="firstname" value="" class="large-field" /></td>
     	</tr>
     	<tr>
       		<td>
-				<span class="required">*</span> 
-				<?php echo $entry_lastname; ?>
+				<label for="lastname" class="required"><?php echo $entry_lastname; ?></label>
 			</td>
       		<td><input type="text" name="lastname" value="" class="large-field" /></td>
     	</tr>
     	<tr>
-      		<td><?php echo $entry_company; ?></td>
+      		<td>
+      			<label for="company"><?php echo $entry_company; ?></label>
+      		</td>
       		<td><input type="text" name="company" value="" class="large-field" /></td>
     	</tr>
     	<tr>
-      		<td><span class="required">*</span> <?php echo $entry_address_1; ?></td>
+      		<td>
+      			<label for="address_1" class="required"><?php echo $entry_address_1; ?></label>
+      		</td>
       		<td><input type="text" name="address_1" value="" class="large-field" /></td>
     	</tr>
     	<tr>
-      		<td><?php echo $entry_address_2; ?></td>
+      		<td>
+      			<label for="address_2"><?php echo $entry_address_2; ?></label>
+      		</td>
       		<td><input type="text" name="address_2" value="" class="large-field" /></td>
     	</tr>
     	<tr>
-      		<td><span class="required">*</span> <?php echo $entry_city; ?></td>
+      		<td>
+      			<label for="city" class="required"><?php echo $entry_city; ?></label>
+      		</td>
       		<td><input type="text" name="city" value="" class="large-field" /></td>
     	</tr>
     	<tr>
-      		<td><span class="required">*</span> <?php echo $entry_postcode; ?></td>
+      		<td>
+      			<label for="postcode" class="required"><?php echo $entry_postcode; ?></label>
+      		</td>
       		<td><input type="text" name="postcode" value="" class="large-field" /></td>
     	</tr>
     	<tr>
       		<td>
-				<span class="required">*</span> 
-				<?php echo $entry_country; ?>
+				<label for="country_id" class="required"><?php echo $entry_country; ?></label>
 			</td>
       		<td>
 				<select name="country_id" class="large-field" onchange="$('#<?php echo $type; ?>-address select[name=\'zone_id\']').load('index.php?route=checkout/address/zone&country_id=' + this.value);">
@@ -85,8 +92,7 @@
     	</tr>
     	<tr>
       		<td>
-				<span class="required">*</span> 
-				<?php echo $entry_zone; ?>
+				<label for="zone_id" class="required"><?php echo $entry_zone; ?></label>
 			</td>
       		<td>
 				<select name="zone_id" class="large-field"></select>
