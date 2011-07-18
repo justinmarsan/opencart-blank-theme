@@ -1,6 +1,6 @@
 <div>
   	<div class="cart-heading"><?php echo $heading_title; ?></div>
-  	<div class="cart-content">
+  	<section class="cart-content">
     	<p><?php echo $text_shipping; ?></p>
     	<table id="shipping">
       		<tr>
@@ -39,7 +39,7 @@
 		<a id="button-quote" class="button"><?php echo $button_quote; ?></a>
 		<div id="quote" style="display: none;"></div>
 		<input type="hidden" name="shipping_method" value="<?php echo $code; ?>" />
-	</div>
+	</section>
 </div>
 <script type="text/javascript"><!--
 $('#button-quote').bind('click', function() {

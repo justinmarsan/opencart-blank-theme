@@ -1,10 +1,10 @@
 <div>
   	<div class="cart-heading"><?php echo $heading_title; ?></div>
-  	<div class="cart-content" id="voucher"><?php echo $entry_voucher; ?>&nbsp;
+  	<section class="cart-content" id="voucher"><?php echo $entry_voucher; ?>&nbsp;
     	<input type="text" name="voucher" value="<?php echo $voucher; ?>" />
     	&nbsp;
 		<a id="button-voucher" class="button"><?php echo $button_voucher; ?></a>
-	</div>
+	</section>
 </div>
 <script type="text/javascript"><!--
 $('#button-voucher').bind('click', function() {

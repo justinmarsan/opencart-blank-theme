@@ -1,12 +1,12 @@
 <div>
   	<div class="cart-heading"><?php echo $heading_title; ?></div>
-  	<div class="cart-content" id="coupon">
+  	<section class="cart-content" id="coupon">
 		<?php echo $entry_coupon; ?>
 		&nbsp;
     	<input type="text" name="coupon" value="<?php echo $coupon; ?>" />
     	&nbsp;
 		<a id="button-coupon" class="button"><?php echo $button_coupon; ?></a>
-	</div>
+	</section>
 </div>
 <script type="text/javascript"><!--
 $('#button-coupon').bind('click', function() {
