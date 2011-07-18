@@ -18,9 +18,7 @@
   	<input type="hidden" name="return" value="<?php echo $return; ?>" />
   	<div class="buttons">
     	<div class="right">
-			<a onclick="$('#payment').submit();" class="button">
-				<span><?php echo $button_confirm; ?></span>
-			</a>
+			<a onclick="$('#payment').submit();" class="button"><?php echo $button_confirm; ?></a>
 		</div>
   	</div>
 </form>

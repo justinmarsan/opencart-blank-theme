@@ -4,6 +4,6 @@
   	<input type="hidden" name="Vendor" value="<?php echo $vendor; ?>" />
   	<input type="hidden" name="Crypt" value="<?php echo $crypt; ?>" />
   	<div class="buttons">
-    	<div class="right"><a onclick="$('#payment').submit();" class="button"><span><?php echo $button_confirm; ?></span></a></div>
+    	<div class="right"><a onclick="$('#payment').submit();" class="button"><?php echo $button_confirm; ?></a></div>
   	</div>
 </form>

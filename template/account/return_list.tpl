@@ -36,9 +36,7 @@
 						<?php echo $return['products']; ?>
 					</div>
       				<div class="return-info">
-						<a href="<?php echo $return['href']; ?>" class="button">
-							<span><?php echo $button_view; ?></span>
-						</a>
+						<a href="<?php echo $return['href']; ?>" class="button"><?php echo $button_view; ?></a>
 					</div>
     			</div>
   			</div>
@@ -49,9 +47,7 @@
   	<?php } ?>
   	<div class="buttons">
     	<div class="right">
-			<a href="<?php echo $continue; ?>" class="button">
-				<span><?php echo $button_continue; ?></span>
-			</a>
+			<a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a>
 		</div>
   	</div>
   	<?php echo $content_bottom; ?>

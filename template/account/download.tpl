@@ -35,9 +35,7 @@
 					<?php echo $download['remaining']; ?>
 				</div>
       			<div class="download-info">
-					<a href="<?php echo $download['href']; ?>" class="button">
-						<span><?php echo $text_download; ?></span>
-					</a>
+					<a href="<?php echo $download['href']; ?>" class="button"><?php echo $text_download; ?></a>
 				</div>
     		</div>
   		</div>
@@ -45,9 +43,7 @@
   	<div class="pagination"><?php echo $pagination; ?></div>
   	<div class="buttons">
     	<div class="right">
-			<a href="<?php echo $continue; ?>" class="button">
-				<span><?php echo $button_continue; ?></span>
-			</a>
+			<a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a>
 		</div>
   	</div>
   	<?php echo $content_bottom; ?>

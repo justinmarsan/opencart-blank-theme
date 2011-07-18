@@ -155,9 +155,7 @@
           						<span class="required">*</span>
           					<?php } ?>
           					<b><?php echo $option['name']; ?>:</b><br />
-          					<a id="button-option-<?php echo $option['product_option_id']; ?>" class="button">
-								<span><?php echo $button_upload; ?></span>
-							</a>
+          					<a id="button-option-<?php echo $option['product_option_id']; ?>" class="button"><?php echo $button_upload; ?></a>
           					<input type="hidden" name="option[<?php echo $option['product_option_id']; ?>]" value="" />
         				</div>
         				<br />
@@ -200,9 +198,7 @@
           		<input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" />
           		<input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
           		&nbsp;
-				<a id="button-cart" class="button">
-					<span><?php echo $button_cart; ?></span>
-				</a>
+				<a id="button-cart" class="button"><?php echo $button_cart; ?></a>
 			</div>
         	<div>
 				<span>
@@ -305,9 +301,7 @@
     	<br />
     	<div class="buttons">
       		<div class="right">
-				<a id="button-review" class="button">
-					<span><?php echo $button_continue; ?></span>
-				</a>
+				<a id="button-review" class="button"><?php echo $button_continue; ?></a>
 			</div>
     	</div>
   	</div>
@@ -340,9 +334,7 @@
 							<img src="catalog/view/theme/default/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" />
 						</div>
         				<?php } ?>
-        				<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button">
-							<span><?php echo $button_cart; ?></span>
-						</a>
+        				<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><?php echo $button_cart; ?></a>
 					</div>
       			<?php } ?>
     		</div>

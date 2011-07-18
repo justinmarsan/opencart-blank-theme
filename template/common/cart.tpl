@@ -52,9 +52,7 @@
   		<?php } ?>
 	</table>
 	<div class="checkout">
-		<a href="<?php echo $checkout; ?>" class="button">
-			<span><?php echo $button_checkout; ?></span>
-		</a>
+		<a href="<?php echo $checkout; ?>" class="button"><?php echo $button_checkout; ?></a>
 	</div>
 <?php } else { ?>
 	<div class="empty"><?php echo $text_empty; ?></div>

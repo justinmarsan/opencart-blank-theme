@@ -69,9 +69,7 @@
   	</div>
 	<div class="buttons">
     	<div class="right">
-			<a id="button-search" class="button">
-				<span><?php echo $button_search; ?></span>
-			</a>
+			<a id="button-search" class="button"><?php echo $button_search; ?></a>
 		</div>
   	</div>
   	<h2><?php echo $text_search; ?></h2>
@@ -141,9 +139,7 @@
 						</div>
       				<?php } ?>
       				<div class="cart">
-						<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button">
-							<span><?php echo $button_cart; ?></span>
-						</a>
+						<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><?php echo $button_cart; ?></a>
 					</div>
       				<div class="wishlist">
 						<a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php echo $button_wishlist; ?></a>

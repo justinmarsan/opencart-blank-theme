@@ -26,9 +26,7 @@
 </form>
 <div class="buttons">
     	<div class="right">
-			<a id="button-confirm" class="button">
-				<span><?php echo $button_confirm; ?></span>
-			</a>
+			<a id="button-confirm" class="button"><?php echo $button_confirm; ?></a>
 		</div>
 </div>
 <script type="text/javascript"><!--

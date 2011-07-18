@@ -66,7 +66,7 @@
   	</table>
 </div>
 <div class="buttons">
-  <div class="right"><a id="button-confirm" class="button"><span><?php echo $button_confirm; ?></span></a></div> 
+  <div class="right"><a id="button-confirm" class="button"><?php echo $button_confirm; ?></a></div> 
 </div>
 <script type="text/javascript"><!--
 $('#button-confirm').bind('click', function() {

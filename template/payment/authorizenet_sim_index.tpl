@@ -32,9 +32,7 @@
   	<input type="hidden" name="x_relay_response" value="<?php echo $x_relay_response; ?>" />
   	<div class="buttons">
     	<div class="right">
-			<a onclick="$('#payment').submit();" class="button">
-				<span><?php echo $button_confirm; ?></span>
-			</a>
+			<a onclick="$('#payment').submit();" class="button"><?php echo $button_confirm; ?></a>
 		</div>
   	</div>
 </form>

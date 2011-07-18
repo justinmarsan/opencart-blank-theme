@@ -73,9 +73,7 @@
 <br />
 <div class="buttons">
   	<div class="right">
-		<a id="button-guest-shipping" class="button">
-			<span><?php echo $button_continue; ?></span>
-		</a>
+		<a id="button-guest-shipping" class="button"><?php echo $button_continue; ?></a>
 	</div>
 </div>
 <script type="text/javascript"><!--

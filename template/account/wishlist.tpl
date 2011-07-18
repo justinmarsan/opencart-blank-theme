@@ -55,9 +55,7 @@
               						<?php } ?>
 								</td>
             					<td class="cart">
-									<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button">
-										<span><?php echo $button_cart; ?></span>
-									</a>
+									<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><?php echo $button_cart; ?></a>
 								</td>
           					</tr>
           				<?php } ?>
@@ -67,23 +65,17 @@
   		</form>
   		<div class="buttons">
     		<div class="left">
-				<a href="<?php echo $back; ?>" class="button">
-					<span><?php echo $button_back; ?></span>
-				</a>
+				<a href="<?php echo $back; ?>" class="button"><?php echo $button_back; ?></a>
 			</div>
     		<div class="right">
-				<a onclick="$('#wishlist').submit();" class="button">
-					<span><?php echo $button_update; ?></span>
-				</a>
+				<a onclick="$('#wishlist').submit();" class="button"><?php echo $button_update; ?></a>
 			</div>
   		</div>
   	<?php } else { ?>
   		<div class="content"><?php echo $text_empty; ?></div>
   		<div class="buttons">
     		<div class="right">
-				<a href="<?php echo $continue; ?>" class="button">
-					<span><?php echo $button_continue; ?></span>
-				</a>
+				<a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a>
 			</div>
   		</div>
   	<?php } ?>

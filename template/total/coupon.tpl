@@ -5,9 +5,7 @@
 		&nbsp;
     	<input type="text" name="coupon" value="<?php echo $coupon; ?>" />
     	&nbsp;
-		<a id="button-coupon" class="button">
-			<span><?php echo $button_coupon; ?></span>
-		</a>
+		<a id="button-coupon" class="button"><?php echo $button_coupon; ?></a>
 	</div>
 </div>
 <script type="text/javascript"><!--

@@ -23,9 +23,7 @@
   	<?php } ?>
   	<br />
   	<p><?php echo $text_register_account; ?></p>
-  	<a id="button-account" class="button">
-		<span><?php echo $button_continue; ?></span>
-	</a>
+  	<a id="button-account" class="button"><?php echo $button_continue; ?></a>
 	<br />
   	<br />
 </div>
@@ -42,6 +40,6 @@
   	<br />
   	<a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a><br />
   	<br />
-  	<a id="button-login" class="button"><span><?php echo $button_login; ?></span></a><br />
+  	<a id="button-login" class="button"><?php echo $button_login; ?></a><br />
   	<br />
 </div>

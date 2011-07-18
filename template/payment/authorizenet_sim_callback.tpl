@@ -12,9 +12,7 @@
     		<tr>
       			<td align="left"></td>
       			<td align="right">
-					<a onclick="location = '<?php echo $confirm; ?>'" class="button">
-						<span><?php echo $button_confirm; ?></span>
-					</a>
+					<a onclick="location = '<?php echo $confirm; ?>'" class="button"><?php echo $button_confirm; ?></a>
 				</td>
     		</tr>
   		</table>
@@ -28,9 +26,7 @@
   		<table>
     		<tr>
       			<td align="left">
-					<a onclick="location = '<?php echo $back; ?>'" class="button">
-						<span><?php echo $button_back; ?></span>
-					</a>
+					<a onclick="location = '<?php echo $back; ?>'" class="button"><?php echo $button_back; ?></a>
 				</td>
       			<td align="right"></td>
     		</tr>
@@ -42,9 +38,7 @@
   		<table>
     		<tr>
       			<td align="left">
-					<a onclick="location = '<?php echo $back; ?>'" class="button">
-						<span><?php echo $button_back; ?></span>
-					</a>
+					<a onclick="location = '<?php echo $back; ?>'" class="button"><?php echo $button_back; ?></a>
 				</td>
       			<td align="right"></td>
     		</tr>

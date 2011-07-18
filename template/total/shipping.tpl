@@ -36,9 +36,7 @@
         		<td><input type="text" name="postcode" value="<?php echo $postcode; ?>" /></td>
       		</tr>
     	</table>
-		<a id="button-quote" class="button">
-			<span><?php echo $button_quote; ?></span>
-		</a>
+		<a id="button-quote" class="button"><?php echo $button_quote; ?></a>
 		<div id="quote" style="display: none;"></div>
 		<input type="hidden" name="shipping_method" value="<?php echo $code; ?>" />
 	</div>
@@ -115,7 +113,7 @@ $('#button-quote').bind('click', function() {
 				}
 				
 				html += '</table>';
-				html += '<br /><a id="button-shipping" class="button"><span><?php echo $button_shipping; ?></span></a>';				
+				html += '<br /><a id="button-shipping" class="button"><?php echo $button_shipping; ?></a>';				
 		
 				$('#quote').html(html);	
 			

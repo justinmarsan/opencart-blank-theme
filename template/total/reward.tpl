@@ -5,7 +5,7 @@
 		&nbsp;
   		<input type="text" name="reward" value="<?php echo $reward; ?>" />
   		&nbsp;
-		<a id="button-reward" class="button"><span><?php echo $button_reward; ?></a>
+		<a id="button-reward" class="button"><?php echo $button_reward; ?></a>
 	</div>
 </div>
 <script type="text/javascript"><!--

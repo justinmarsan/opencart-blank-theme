@@ -121,9 +121,7 @@
    						<td></td>
    						<?php foreach ($products as $product) { ?>
    							<td>
-								<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button">
-									<span><?php echo $button_cart; ?></span>
-								</a>
+								<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><?php echo $button_cart; ?></a>
 							</td>
    						<?php } ?>
    					</tr>
@@ -133,9 +131,7 @@
    							<td>
 								<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
        								<input type="hidden" name="remove" value="<?php echo $product['product_id']; ?>" />
-       								<a class="button" onclick="$(this).parent().submit();">
-										<span><?php echo $text_remove; ?></span>
-									</a>
+       								<a class="button" onclick="$(this).parent().submit();"><?php echo $text_remove; ?></a>
        							</form>
 							</td>
    						<?php } ?>
@@ -143,18 +139,14 @@
 				</table>
 				<div class="buttons">
    					<div class="right">
-						<a href="<?php echo $continue; ?>" class="button">
-							<span><?php echo $button_continue; ?></span>
-						</a>
+						<a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a>
 					</div>
 				</div>
 		<?php } else { ?>
 			<div class="content"><?php echo $text_empty; ?></div>
 			<div class="buttons">
    				<div class="right">
-					<a href="<?php echo $continue; ?>" class="button">
-						<span><?php echo $button_continue; ?></span>
-					</a>
+					<a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a>
 				</div>
 			</div>
 		<?php } ?>

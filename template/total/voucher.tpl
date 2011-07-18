@@ -3,9 +3,7 @@
   	<div class="cart-content" id="voucher"><?php echo $entry_voucher; ?>&nbsp;
     	<input type="text" name="voucher" value="<?php echo $voucher; ?>" />
     	&nbsp;
-		<a id="button-voucher" class="button">
-			<span><?php echo $button_voucher; ?></span>
-		</a>
+		<a id="button-voucher" class="button"><?php echo $button_voucher; ?></a>
 	</div>
 </div>
 <script type="text/javascript"><!--

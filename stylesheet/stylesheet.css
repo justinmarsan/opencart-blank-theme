@@ -556,7 +556,7 @@ a:hover {
 	-moz-border-radius: 0px 0px 5px 5px;
 	-khtml-border-radius: 0px 0px 5px 5px;
 	border-radius: 0px 0px 5px 5px;
-	background: url('../image/menu.png');
+	background: rgba(0,0,0,0.8);
 }
 
 #menu > ul > li ul > li > a:hover {
@@ -844,12 +844,7 @@ table.list .center {
 /*** Layout ***/
 a.button {
 	display: inline-block;
-	padding-left: 6px;
-}
-
-a.button span {
-	display: inline-block;
-	padding: 6px 12px 8px 5px;
+	padding: 6px 12px;
 }
 
 .buttons {
@@ -875,20 +870,16 @@ a.button span {
 
 /*** Skin ***/
 a.button {
-	background: url('../image/button-left.png') top left no-repeat;
+	/*background: url('../image/button-left.png') top left no-repeat;*/
+	background:red;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 	cursor: pointer;
 }
 
-a.button span {
-	background: url('../image/button-right.png') top right no-repeat;
-}
-
 a.button:hover {
-	background: url('../image/button-left-active.png') top left no-repeat;
-}
-
-a.button:hover span {
-	background: url('../image/button-right-active.png') top right no-repeat;
+	background: blue;
 }
 
 .buttons {
@@ -900,16 +891,13 @@ a.button:hover span {
 /*** Typography ***/
 a.button {
 	text-decoration: none;
-}
-
-a.button span {
 	color: #FFFFFF;
 	line-height: 12px;
 	font-size: 12px;
 	font-weight: bold;
 }
 
-a.button:hover span {
+a.button:hover {
 	color: #FFFFFF;
 }
 

@@ -41,8 +41,6 @@
 <br />
 <div class="buttons">
   	<div class="right">
-		<a id="button-shipping" class="button">
-			<span><?php echo $button_continue; ?></span>
-		</a>
+		<a id="button-shipping" class="button"><?php echo $button_continue; ?></a>
 	</div>
 </div>

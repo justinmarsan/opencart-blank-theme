@@ -162,9 +162,7 @@
 								</textarea>
             				</div>
             				<div class="return-remove">
-								<a onclick="$('#return-product-row<?php echo $return_product_row; ?>').remove();" class="button">
-									<span><?php echo $button_remove; ?></span>
-								</a>
+								<a onclick="$('#return-product-row<?php echo $return_product_row; ?>').remove();" class="button"><?php echo $button_remove; ?></a>
 							</div>
           				</div>
         			</div>
@@ -174,9 +172,7 @@
     	</div>
     	<div class="buttons">
       		<div class="right">
-				<a onclick="addReturnProduct();" class="button">
-					<span><?php echo $button_add_product; ?></span>
-				</a>
+				<a onclick="addReturnProduct();" class="button"><?php echo $button_add_product; ?></a>
 			</div>
     	</div>
     	<h2><?php echo $text_additional; ?></h2>
@@ -197,14 +193,10 @@
     	</div>
     	<div class="buttons">
       		<div class="left">
-				<a href="<?php echo $back; ?>" class="button">
-					<span><?php echo $button_back; ?></span>
-				</a>
+				<a href="<?php echo $back; ?>" class="button"><?php echo $button_back; ?></a>
 			</div>
       		<div class="right">
-				<a onclick="$('#return').submit();" class="button">
-					<span><?php echo $button_continue; ?></span>
-				</a>
+				<a onclick="$('#return').submit();" class="button"><?php echo $button_continue; ?></a>
 			</div>
     	</div>
   	</form>
@@ -236,7 +228,7 @@ function addReturnProduct() {
 	html += '      <input type="radio" name="return_product[' + return_product_row + '][opened]" value="1" id="opened' + return_product_row + '" checked="checked" /><?php echo $text_yes; ?><label for="opened' + return_product_row + '"></label> <input type="radio" name="return_product[' + return_product_row + '][opened]" value="0" id="unopened' + return_product_row + '" /><label for="unopened' + return_product_row + '"><?php echo $text_no; ?></label><br /><br />';	
 	html += '	   <?php echo $entry_fault_detail; ?><br /><textarea name="return_product[' + return_product_row + '][comment]" cols="45" rows="6"></textarea>';
 	html += '    </div>';
-    html += '    <div class="return-remove"><a onclick="$(\'#return-product-row' + return_product_row + '\').remove();" class="button"><span><?php echo $button_remove; ?></span></a></div>';
+    html += '    <div class="return-remove"><a onclick="$(\'#return-product-row' + return_product_row + '\').remove();" class="button"><?php echo $button_remove; ?></a></div>';
 	html += '  </div>';
 	html += '</div>';
 	

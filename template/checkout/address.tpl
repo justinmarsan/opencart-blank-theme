@@ -97,9 +97,7 @@
 <br />
 <div class="buttons">
   	<div class="right">
-		<a id="button-address" class="button">
-			<span><?php echo $button_continue; ?></span>
-		</a>
+		<a id="button-address" class="button"><?php echo $button_continue; ?></a>
 	</div>
 </div>
 <script type="text/javascript"><!--

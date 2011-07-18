@@ -31,9 +31,7 @@
   	<input type="hidden" name="return_url" value="<?php echo $return_url; ?>" />
   	<div class="buttons">
     	<div class="right">
-			<a onclick="$('#payment').submit();" class="button">
-				<span><?php echo $button_confirm; ?></span>
-			</a>
+			<a onclick="$('#payment').submit();" class="button"><?php echo $button_confirm; ?></a>
 		</div>
   	</div>
 </form>

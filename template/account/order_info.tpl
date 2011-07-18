@@ -117,9 +117,7 @@
   	</form>
   	<div class="buttons">
     	<div class="right">
-			<a onclick="$('#reorder').submit();" class="button">
-				<span><?php echo $button_reorder; ?></span>
-			</a>
+			<a onclick="$('#reorder').submit();" class="button"><?php echo $button_reorder; ?></a>
 		</div>
   	</div>
   	<?php if ($comment) { ?>
@@ -159,9 +157,7 @@
   	<?php } ?>
   	<div class="buttons">
     	<div class="right">
-			<a href="<?php echo $continue; ?>" class="button">
-				<span><?php echo $button_continue; ?></span>
-			</a>
+			<a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a>
 		</div>
   	</div>
   	<?php echo $content_bottom; ?>

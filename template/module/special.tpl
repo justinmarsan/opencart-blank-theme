@@ -28,9 +28,7 @@
 						</div>
         			<?php } ?>
         			<div class="cart">
-						<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button">
-							<span><?php echo $button_cart; ?></span>
-						</a>
+						<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><?php echo $button_cart; ?></a>
 					</div>
       			</div>
       		<?php } ?>

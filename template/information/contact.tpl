@@ -64,9 +64,7 @@
     	</div>
     	<div class="buttons">
       		<div class="right">
-				<a onclick="$('#contact').submit();" class="button">
-					<span><?php echo $button_continue; ?></span>
-				</a>
+				<a onclick="$('#contact').submit();" class="button"><?php echo $button_continue; ?></a>
 			</div>
 		</div>
 	</form>

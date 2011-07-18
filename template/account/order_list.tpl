@@ -37,9 +37,7 @@
 						<?php echo $order['total']; ?>
 					</div>
       				<div class="order-info">
-						<a href="<?php echo $order['href']; ?>" class="button">
-							<span><?php echo $button_view; ?></span>
-						</a>
+						<a href="<?php echo $order['href']; ?>" class="button"><?php echo $button_view; ?></a>
 					</div>
     			</div>
   			</div>
@@ -50,9 +48,7 @@
 <?php } ?>
 	<div class="buttons">
     	<div class="right">
-			<a href="<?php echo $continue; ?>" class="button">
-				<span><?php echo $button_continue; ?></span>
-			</a>
+			<a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a>
 		</div>
   	</div>
   	<?php echo $content_bottom; ?>

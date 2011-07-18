@@ -24,9 +24,7 @@
   	<input type="hidden" name="order_id" value="<?php echo $order_id; ?>" />
   	<div class="buttons">
     	<div class="right">
-			<a onclick="$('#payment').submit();" class="button">
-				<span><?php echo $button_confirm; ?></span>
-			</a>
+			<a onclick="$('#payment').submit();" class="button"><?php echo $button_confirm; ?></a>
 		</div>
   	</div>
 </form>

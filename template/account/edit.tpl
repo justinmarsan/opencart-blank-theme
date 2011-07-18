@@ -69,14 +69,10 @@
     	</div>
     	<div class="buttons">
       		<div class="left">
-				<a href="<?php echo $back; ?>" class="button">
-					<span><?php echo $button_back; ?></span>
-				</a>
+				<a href="<?php echo $back; ?>" class="button"><?php echo $button_back; ?></a>
 			</div>
       		<div class="right">
-				<a onclick="$('#edit').submit();" class="button">
-					<span><?php echo $button_continue; ?></span>
-				</a>
+				<a onclick="$('#edit').submit();" class="button"><?php echo $button_continue; ?></a>
 			</div>
     	</div>
   	</form>
