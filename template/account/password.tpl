@@ -15,8 +15,7 @@
       		<table class="form">
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_password; ?>
+						<label for="password" class="required"><?php echo $entry_password; ?></label>
 					</td>
           			<td>
 						<input type="password" name="password" value="<?php echo $password; ?>" />
@@ -27,8 +26,7 @@
         		</tr>
         		<tr>
           			<td>
-						<span class="required">*</span> 
-						<?php echo $entry_confirm; ?>
+						<label for="confirm" class="required"><?php echo $entry_confirm; ?></label>
 					</td>
           			<td>
 						<input type="password" name="confirm" value="<?php echo $confirm; ?>" />
