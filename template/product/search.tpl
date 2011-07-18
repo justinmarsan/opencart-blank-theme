@@ -11,7 +11,8 @@
   	<h1><?php echo $heading_title; ?></h1>
   	<b><?php echo $text_critea; ?></b>
   	<section class="content">
-    	<p><?php echo $entry_search; ?>
+    	<p>
+			<label for="filter_name"><?php echo $entry_search; ?></label>
       		<?php if ($filter_name) { ?>
       			<input type="text" name="filter_name" value="<?php echo $filter_name; ?>" />
       		<?php } else { ?>
