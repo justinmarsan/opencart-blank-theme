@@ -1,27 +1,27 @@
 <?php echo $header; ?>
 <?php echo $column_left; ?>
 <?php echo $column_right; ?>
-<div id="content">
+<section id="content">
 	<?php echo $content_top; ?>
-  	<div class="breadcrumb">
+  	<section class="breadcrumb">
     	<?php foreach ($breadcrumbs as $breadcrumb) { ?>
     		<?php echo $breadcrumb['separator']; ?>
 			<a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     	<?php } ?>
-  	</div>
+  	</section>
   	<h1><?php echo $heading_title; ?></h1>
   	<?php if ($orders) { ?>
   		<?php foreach ($orders as $order) { ?>
-  			<div class="order-list">
-    			<div class="order-id">
+  			<article class="order-list">
+    			<section class="order-id">
 					<b><?php echo $text_order_id; ?></b> 
 					#<?php echo $order['order_id']; ?>
-				</div>
-    			<div class="order-status">
+				</section>
+    			<section class="order-status">
 					<b><?php echo $text_status; ?></b> 
 					<?php echo $order['status']; ?>
-				</div>
-    			<div class="order-content">
+				</section>
+    			<section class="order-content">
       				<div>
 						<b><?php echo $text_date_added; ?></b> 
 						<?php echo $order['date_added']; ?>
@@ -39,12 +39,12 @@
       				<div class="order-info">
 						<a href="<?php echo $order['href']; ?>" class="button"><?php echo $button_view; ?></a>
 					</div>
-    			</div>
-  			</div>
+    			</section>
+  			</article>
   		<?php } ?>
-  	<div class="pagination"><?php echo $pagination; ?></div>
+  	<section class="pagination"><?php echo $pagination; ?></section>
 <?php } else { ?>
-  	<div class="content"><?php echo $text_empty; ?></div>
+  	<section class="content"><?php echo $text_empty; ?></section>
 <?php } ?>
 	<div class="buttons">
     	<div class="right">
@@ -52,5 +52,5 @@
 		</div>
   	</div>
   	<?php echo $content_bottom; ?>
-</div>
+</section>
 <?php echo $footer; ?>
