@@ -1,13 +1,13 @@
 <?php echo $header; ?>
 <?php echo $column_left; ?>
 <?php echo $column_right; ?>
-<div id="content">
+<section id="content">
 	<?php echo $content_top; ?>
-  	<div class="breadcrumb">
+  	<section class="breadcrumb">
     	<?php foreach ($breadcrumbs as $breadcrumb) { ?>
     		<?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     	<?php } ?>
-  	</div>
+  	</section>
   	<h1><?php echo $heading_title; ?></h1>
   	<div class="product-info">
     	<?php if ($thumb || $images) { ?>
@@ -193,7 +193,7 @@
         		<?php } ?>
       		</div>
       <?php } ?>
-      <div class="cart">
+      <section class="cart">
         	<div><?php echo $text_qty; ?>
           		<input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" />
           		<input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
@@ -214,9 +214,9 @@
         	<?php if ($minimum > 1) { ?>
         		<div class="minimum"><?php echo $text_minimum; ?></div>
         	<?php } ?>
-      	</div>
+      	</section>
       	<?php if ($review_status) { ?>
-      		<div class="review">
+      		<section class="review">
         		<div>
 					<img src="catalog/view/theme/default/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />
 					&nbsp;&nbsp;
@@ -232,11 +232,11 @@
 					</div>
           			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js"></script> 
          		</div>
-      		</div>
+      		</section>
       	<?php } ?>
 	</div>
 </div>
-<div id="tabs" class="htabs">
+<section id="tabs" class="htabs">
 	<a href="#tab-description"><?php echo $tab_description; ?></a>
 	<?php if ($attribute_groups) { ?>
     	<a href="#tab-attribute"><?php echo $tab_attribute; ?></a>
@@ -247,10 +247,10 @@
 	<?php if ($products) { ?>
     	<a href="#tab-related"><?php echo $tab_related; ?> (<?php echo count($products); ?>)</a>
 	<?php } ?>
-</div>
-<div id="tab-description" class="tab-content"><?php echo $description; ?></div>
+</section>
+<section id="tab-description" class="tab-content"><?php echo $description; ?></section>
 <?php if ($attribute_groups) { ?>
-  	<div id="tab-attribute" class="tab-content">
+  	<section id="tab-attribute" class="tab-content">
     	<table class="attribute">
       		<?php foreach ($attribute_groups as $attribute_group) { ?>
       			<thead>
@@ -268,10 +268,10 @@
       			</tbody>
       		<?php } ?>
     	</table>
-  	</div>
+  	</section>
 <?php } ?>
 <?php if ($review_status) { ?>
-  	<div id="tab-review" class="tab-content">
+  	<section id="tab-review" class="tab-content">
     	<div id="review"></div>
     	<h2 id="review-title"><?php echo $text_write; ?></h2>
     	<b><?php echo $entry_name; ?></b><br />
@@ -304,10 +304,10 @@
 				<a id="button-review" class="button"><?php echo $button_continue; ?></a>
 			</div>
     	</div>
-  	</div>
+  	</section>
 <?php } ?>
 <?php if ($products) { ?>
-  	<div id="tab-related" class="tab-content">
+  	<section id="tab-related" class="tab-content">
     	<div class="box-product">
       		<?php foreach ($products as $product) { ?>
       			<div>
@@ -338,18 +338,18 @@
 					</div>
       			<?php } ?>
     		</div>
-  		</div>
+  		</section>
 	<?php } ?>
 	<?php if ($tags) { ?>
-  		<div class="tags">
+  		<section class="tags">
 			<b><?php echo $text_tags; ?></b>
     		<?php foreach ($tags as $tag) { ?>
     			<a href="<?php echo $tag['href']; ?>"><?php echo $tag['tag']; ?></a>,
     		<?php } ?>
-		</div>
+		</section>
 	<?php } ?>
   	<?php echo $content_bottom; ?>
-</div>
+</section>
 <script type="text/javascript"><!--
 $('.fancybox').fancybox({cyclic: true});
 //--></script>

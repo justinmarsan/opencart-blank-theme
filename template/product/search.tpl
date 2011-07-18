@@ -1,16 +1,16 @@
 <?php echo $header; ?>
 <?php echo $column_left; ?>
 <?php echo $column_right; ?>
-<div id="content">
+<section id="content">
 	<?php echo $content_top; ?>
-  	<div class="breadcrumb">
+  	<section class="breadcrumb">
     	<?php foreach ($breadcrumbs as $breadcrumb) { ?>
     		<?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     	<?php } ?>
-  	</div>
+  	</section>
   	<h1><?php echo $heading_title; ?></h1>
   	<b><?php echo $text_critea; ?></b>
-  	<div class="content">
+  	<section class="content">
     	<p><?php echo $entry_search; ?>
       		<?php if ($filter_name) { ?>
       			<input type="text" name="filter_name" value="<?php echo $filter_name; ?>" />
@@ -66,7 +66,7 @@
     		<input type="checkbox" name="filter_description" value="1" id="description" />
     	<?php } ?>
     	<label for="description"><?php echo $entry_description; ?></label>
-  	</div>
+  	</section>
 	<div class="buttons">
     	<div class="right">
 			<a id="button-search" class="button"><?php echo $button_search; ?></a>
@@ -74,7 +74,7 @@
   	</div>
   	<h2><?php echo $text_search; ?></h2>
   	<?php if ($products) { ?>
-  		<div class="product-filter">
+  		<section class="product-filter">
     		<div class="display">
 				<b><?php echo $text_display; ?></b> 
 				<?php echo $text_list; ?> 
@@ -105,11 +105,11 @@
         			<?php } ?>
       			</select>
     		</div>
-  		</div>
+  		</section>
   		<div class="product-compare"><a href="<?php echo $compare; ?>" id="compare_total"><?php echo $text_compare; ?></a></div>
   		<div class="product-list">
     		<?php foreach ($products as $product) { ?>
-    			<div>
+    			<article>
       				<?php if ($product['thumb']) { ?>
       					<div class="image">
 							<a href="<?php echo $product['href']; ?>">
@@ -147,15 +147,15 @@
       				<div class="compare">
 						<a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php echo $button_compare; ?></a>
 					</div>
-    			</div>
+    			</article>
     		<?php } ?>
   		</div>
-  		<div class="pagination"><?php echo $pagination; ?></div>
+  		<section class="pagination"><?php echo $pagination; ?></section>
   	<?php } else { ?>
   		<div class="content"><?php echo $text_empty; ?></div>
   	<?php }?>
   	<?php echo $content_bottom; ?>
-</div>
+</section>
 <script type="text/javascript"><!--
 $('#content input[name=\'filter_name\']').keydown(function(e) {
 	if (e.keyCode == 13) {

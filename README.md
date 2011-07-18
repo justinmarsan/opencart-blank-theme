@@ -36,3 +36,4 @@ HTML5 Tags in :
 - template/error/*
 - template/information/*
 - template/module/*
+- template/product/*
