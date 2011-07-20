@@ -75,7 +75,7 @@ Labels Added in :
 Suggestions and questions
 =========================
 
-If you have any question or suggestion feel free to send me an email at hello@justinmarsan.com
+If you have any question or suggestion feel free to send me an email at hello@justinmarsan.com or go on http://forum.opencart.com/viewtopic.php?f=120&t=36292
 
 License MIT
 ===========
