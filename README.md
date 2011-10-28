@@ -1,6 +1,8 @@
 Opencart Blank Theme
 ====================
 
+Opencart Version : 1.5.1.3
+
 What is the point of it ?
 -------------------------
 

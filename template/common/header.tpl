@@ -65,7 +65,7 @@
 </head>
 
 <body>
-	<div id="container">
+    <div id="container">
 		<header id="header">
 			<?php if ($logo) { ?>
   				<h1 id="logo">

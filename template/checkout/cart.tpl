@@ -60,8 +60,8 @@
 											<br />
                   						<?php } ?>
                 					</div>
-                					<?php if ($product['points']) { ?>
-                						<small><?php echo $product['points']; ?></small>
+                					<?php if ($product['reward']) { ?>
+                						<small><?php echo $product['reward']; ?></small>
                 					<?php } ?>
 								</td>
               					<td class="model"><?php echo $product['model']; ?></td>
