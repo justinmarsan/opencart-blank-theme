@@ -1,6 +1,9 @@
 <?php 
 	if (isset($_SERVER['HTTP_USER_AGENT']) && !strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 6')) echo '<?xml version="1.0" encoding="UTF-8"?>'. "\n";
 ?>
+
+<?php include('_config.tpl'); ?>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" xml:lang="<?php echo $lang; ?>">
 <head>
@@ -30,7 +33,7 @@
 		<link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
 	<?php } ?>
 	
-	<link rel="stylesheet" type="text/css" href="catalog/view/theme/opencart-blank-theme/stylesheet/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="<?=TEMPLATE_FOLDER?>/stylesheet/stylesheet.css" />
 	<?php foreach ($styles as $style) { ?>
 		<link rel="<?php echo $style['rel']; ?>" type="text/css" href="<?php echo $style['href']; ?>" media="<?php echo $style['media']; ?>" />
 	<?php } ?>
