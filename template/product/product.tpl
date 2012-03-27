@@ -14,7 +14,7 @@
     		<div class="left">
       			<?php if ($thumb) { ?>
       				<div class="image">
-						<a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class="fancybox" rel="fancybox">
+						<a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class="colorbox" rel="colorbox">
 							<img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" id="image" />
 						</a>
 					</div>
@@ -22,7 +22,7 @@
       			<?php if ($images) { ?>
       				<div class="image-additional">
         				<?php foreach ($images as $image) { ?>
-        					<a href="<?php echo $image['popup']; ?>" class="fancybox" rel="fancybox">
+        					<a href="<?php echo $image['popup']; ?>" class="colorbox" rel="colorbox">
 								<img src="<?php echo $image['thumb']; ?>" alt="<?php echo $heading_title; ?>" />
 							</a>
         				<?php } ?>
@@ -383,12 +383,15 @@
   	<?php echo $content_bottom; ?>
 </section>
 <script type="text/javascript"><!--
-$('.fancybox').fancybox({cyclic: true});
-//--></script>
+$('.colorbox').colorbox({
+  overlayClose: true,
+  opacity: 0.5
+});
+//--></script> 
 <script type="text/javascript"><!--
 $('#button-cart').bind('click', function() {
 	$.ajax({
-		url: 'index.php?route=checkout/cart/update',
+		url: 'index.php?route=checkout/cart/add',
 		type: 'post',
 		data: $('.product-info input[type=\'text\'], .product-info input[type=\'hidden\'], .product-info input[type=\'radio\']:checked, .product-info input[type=\'checkbox\']:checked, .product-info select, .product-info textarea'),
 		dataType: 'json',
