@@ -33,7 +33,7 @@
 		<link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
 	<?php } ?>
 	
-	<link rel="stylesheet" type="text/css" href="<?php echo TEMPLATE_FOLDER; ?>/stylesheet/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo TEMPLATE_FOLDER; ?>stylesheet/stylesheet.css" />
 	<?php foreach ($styles as $style) { ?>
 		<link rel="<?php echo $style['rel']; ?>" type="text/css" href="<?php echo $style['href']; ?>" media="<?php echo $style['media']; ?>" />
 	<?php } ?>
